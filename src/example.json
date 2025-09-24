@@ -1,0 +1,119 @@
+{
+  "project": {
+    "name": "مشروع البنية التحتية الكبرى",
+    "startDate": "2024-01-01",
+    "activities": [
+      {
+        "id": 1,
+        "name": "بدء المشروع",
+        "startDate": "2024-01-01",
+        "durationDays": 5
+      },
+      {
+        "id": 2,
+        "name": "تخطيط المشروع",
+        "startDate": "2024-01-06",
+        "durationDays": 30,
+        "dependsOn": [1]
+      },
+      {
+        "id": 3,
+        "name": "دراسة الجدوى",
+        "startDate": "2024-02-05",
+        "durationDays": 20,
+        "dependsOn": [2]
+      },
+      {
+        "id": 4,
+        "name": "التصميم الأولي",
+        "startDate": "2024-02-25",
+        "durationDays": 40,
+        "dependsOn": [3]
+      },
+      {
+        "id": 5,
+        "name": "مراجعة التصميم الأولي",
+        "startDate": "2024-04-05",
+        "durationDays": 10,
+        "dependsOn": [4]
+      },
+      {
+        "id": 6,
+        "name": "التصميم النهائي",
+        "startDate": "2024-04-15",
+        "durationDays": 30,
+        "dependsOn": [5]
+      },
+      {
+        "id": 7,
+        "name": "الحصول على التصاريح",
+        "startDate": "2024-05-15",
+        "durationDays": 20,
+        "dependsOn": [6]
+      },
+      {
+        "id": 8,
+        "name": "تأمين التمويل",
+        "startDate": "2024-06-05",
+        "durationDays": 15,
+        "dependsOn": [7]
+      },
+      {
+        "id": 9,
+        "name": "بدء البناء",
+        "startDate": "2024-06-20",
+        "durationDays": 120,
+        "dependsOn": [8]
+      },
+      {
+        "id": 10,
+        "name": "مراقبة الجودة",
+        "startDate": "2024-06-20",
+        "durationDays": 120,
+        "dependsOn": [9]
+      },
+      {
+        "id": 11,
+        "name": "اختبار الأنظمة",
+        "startDate": "2024-10-20",
+        "durationDays": 30,
+        "dependsOn": [9]
+      },
+      {
+        "id": 12,
+        "name": "التسليم النهائي",
+        "startDate": "2024-11-20",
+        "durationDays": 10,
+        "dependsOn": [11]
+      },
+      {
+        "id": 13,
+        "name": "التدريب والتوجيه",
+        "startDate": "2024-11-30",
+        "durationDays": 5,
+        "dependsOn": [12]
+      },
+      {
+        "id": 14,
+        "name": "بدء التشغيل",
+        "startDate": "2024-12-05",
+        "durationDays": 5,
+        "dependsOn": [13]
+      },
+      {
+        "id": 15,
+        "name": "دعم ما بعد التشغيل",
+        "startDate": "2024-12-10",
+        "durationDays": 30,
+        "dependsOn": [14]
+      },
+      {
+        "id": 16,
+        "name": "إغلاق المشروع",
+        "startDate": "2025-01-10",
+        "durationDays": 5,
+        "dependsOn": [15]
+      }
+    ]
+  }
+}

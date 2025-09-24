@@ -1,0 +1,167 @@
+{
+  "app": {
+    "name": "Innovative Engineering",
+    "tagline": "AI + Human Expertise for HR, Marketing, and Customer Engagement"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "signup": "Sign Up",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "profile": "Profile",
+    "language": "العربية"
+  },
+  "home": {
+    "hero": {
+      "title": "AI + Human Expertise",
+      "subtitle": "Advanced solutions for HR, Marketing, and Customer Service",
+      "cta": "Start Free Trial"
+    },
+    "features": {
+      "title": "Key Features",
+      "autoDoc": {
+        "title": "Automatic Document Preparation",
+        "description": "Smart system integrates your data with approved templates, generating submission-ready documents in minutes"
+      },
+      "templates": {
+        "title": "Sector-based Templates",
+        "description": "Templates categorized by sectors (Construction, Energy, Infrastructure, Water), customizable per project"
+      },
+      "notifications": {
+        "title": "WhatsApp Instant Notifications",
+        "description": "Get real-time updates about document status and team collaboration"
+      },
+      "security": {
+        "title": "Digital Signatures and QR Codes",
+        "description": "Add digital signatures and generate QR codes for quick document verification"
+      }
+    },
+    "benefits": {
+      "title": "Why Choose Our Platform?",
+      "timeEfficiency": {
+        "title": "Time and Effort Savings",
+        "description": "Reduce document preparation time with ready templates and easy customization"
+      },
+      "collaboration": {
+        "title": "Enhanced Collaboration",
+        "description": "Share documents with your team, comment, and track changes easily"
+      },
+      "security": {
+        "title": "High Document Security",
+        "description": "Advanced document protection with encryption and change logging"
+      }
+    },
+    "testimonial": {
+      "quote": "The Consultant Dashboard has transformed how we prepare tenders. Speed, accuracy, and collaboration are easier than ever.",
+      "author": "Mohammed Al-Otaibi",
+      "position": "Project Manager, Advanced Construction Company"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "templates": {
+          "question": "Can I customize templates for my project?",
+          "answer": "Yes, you can modify templates or create new ones according to your project needs."
+        },
+        "security": {
+          "question": "Is the system secure for sensitive documents?",
+          "answer": "Absolutely, documents are encrypted and a complete audit trail is maintained for transparency."
+        },
+        "sharing": {
+          "question": "Can I share documents with my team?",
+          "answer": "Yes, you can invite team members to collaborate on documents and track changes and comments."
+        }
+      }
+    },
+    "cta": {
+      "title": "Get Started Now",
+      "subtitle": "Try the Consultant Dashboard for free and start improving your tender preparation process",
+      "button": "Start Free Trial"
+    }
+  },
+  "auth": {
+    "loginButton": "Login",
+    "signupButton": "Sign Up",
+    "loginNow": "Login Now",
+    "signupNow": "Sign Up Now",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "backToLogin": "Back to Login",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "Enter your password again",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "validEmailRequired": "Please enter a valid email",
+    "passwordRequired": "Please enter a password",
+    "passwordsMustMatch": "Passwords do not match",
+    "resetSuccess": "Password reset link has been sent to your email",
+    "loginSuccess": "Successfully logged in",
+    "signupSuccess": "Account created successfully",
+    "resetPasswordButton": "Send Reset Link"
+  },
+  "dashboard": {
+    "welcome": "Welcome to Dashboard",
+    "overview": "Overview",
+    "services": "Services",
+    "activities": "Activities",
+    "payments": "Payments",
+    "settings": "Settings",
+    "tendering": {
+      "title": "Tendering",
+      "description": "Manage and track tenders",
+      "empty": "No tenders available",
+      "upgrade": "Upgrade to access tendering"
+    },
+    "noServices": "No active services",
+    "noActivities": "No recent activities",
+    "viewAllServices": "View all services",
+    "viewAllActivities": "View all activities",
+    "subscription": "Subscription",
+    "yourPlan": "Your Plan",
+    "freePlan": "Free Plan",
+    "basicPlan": "Basic Plan",
+    "premiumPlan": "Premium Plan"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "overview": "Overview",
+    "users": "Users",
+    "services": "Services",
+    "subscriptions": "Subscriptions",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "totalUsers": "Total Users",
+    "activeSubscriptions": "Active Subscriptions",
+    "totalRevenue": "Total Revenue",
+    "viewAll": "View All",
+    "addUser": "Add User",
+    "addService": "Add Service"
+  },
+  "gantt": {
+    "title": "Gantt Chart",
+    "exportPdf": "Export PDF",
+    "exportCsv": "Export CSV",
+    "pdf": "PDF",
+    "csv": "CSV",
+    "visualizationComingSoon": "Coming Soon - Gantt Chart Visualization"
+  },
+  "loading": "Loading...",
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "pageNotFound": "Page Not Found",
+    "failedToLoadGantt": "Failed to load Gantt chart"
+  },
+  "stripe": {
+    "checkout": "Checkout",
+    "subscribe": "Subscribe Now",
+    "upgrade": "Upgrade"
+  }
+}

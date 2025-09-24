@@ -1,0 +1,150 @@
+import React, { useState, useCallback } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Menu, X, ChevronDown, Globe, User, LogOut, Settings } from 'lucide-react';
+
+const Header: React.FC = () => {
+  const { t, i18n } = useTranslation();
+  const [uiState, setUiState] = useState({
+    isMenuOpen: false,
+    isProfileDropdownOpen: false
+  });
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Memoize the current path to avoid unnecessary re-renders
+  const currentPath = location.pathname;
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+    i18n.changeLanguage(newLang);
+    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = newLang;
+  };
+
+  // Memoize the isActive function to avoid recalculating on every render
+  const isActive = useCallback((path: string) => currentPath === path, [currentPath]);
+
+  const toggleMenu = useCallback(() => {
+    setUiState(prev => ({ ...prev, isMenuOpen: !prev.isMenuOpen }));
+  }, []);
+
+  const toggleProfileDropdown = useCallback(() => {
+    setUiState(prev => ({ ...prev, isProfileDropdownOpen: !prev.isProfileDropdownOpen }));
+  }, []);
+
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="container-custom py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <Link to="/" className="text-2xl font-bold text-primary-600">
+              {t('app.name')}
+            </Link>
+          </div>
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-1 rtl:space-x-reverse">
+            <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.home')}
+            </Link>
+            <Link to="/services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.services')}
+            </Link>
+            <Link to="/services/hr" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.hrServices')}
+            </Link>
+            <Link to="/services/whatsapp" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/whatsapp') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.whatsappServices')}
+            </Link>
+            <Link to="/services/calls" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/calls') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.callServices')}
+            </Link>
+            <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.about')}
+            </Link>
+            <Link to="/contact" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/contact') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+              {t('nav.contact')}
+            </Link>
+            
+            <button 
+              onClick={toggleLanguage} 
+              className="px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-600 flex items-center"
+            >
+              <Globe size={18} className="ml-1 rtl:mr-1 rtl:ml-0" />
+              <span className="mr-1 rtl:ml-1 rtl:mr-0">{t('nav.language')}</span>
+            </button>
+            
+            <div className="flex items-center space-x-2 rtl:space-x-reverse ml-3 rtl:mr-3 rtl:ml-0">
+              <Link to="/login" className="btn-outline">
+                {t('nav.login')}
+              </Link>
+              <Link to="/verify-phone" className="btn-primary whitespace-nowrap">
+                {t('nav.signup')}
+              </Link>
+            </div>
+          </nav>
+          
+          {/* Mobile menu button */}
+          <div className="flex md:hidden">
+            <button
+              className="p-2 rounded-md text-secondary-700"
+              onClick={toggleMenu}
+              aria-label={uiState.isMenuOpen ? "Close menu" : "Open menu"}
+            >
+              {uiState.isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+        
+        {/* Mobile Navigation */}
+        {uiState.isMenuOpen && (
+          <div className="md:hidden mt-4 pb-3 border-t border-secondary-200">
+            <div className="pt-2 space-y-1">
+              <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.home')}
+              </Link>
+              <Link to="/services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.services')}
+              </Link>
+              <Link to="/services/hr" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.hrServices')}
+              </Link>
+              <Link to="/services/whatsapp" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/whatsapp') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.whatsappServices')}
+              </Link>
+              <Link to="/services/calls" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/calls') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.callServices')}
+              </Link>
+              <Link to="/about" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.about')}
+              </Link>
+              <Link to="/contact" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+                {t('nav.contact')}
+              </Link>
+              
+              <button 
+                onClick={toggleLanguage} 
+                className="w-full text-left flex items-center px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:bg-secondary-100"
+              >
+                <Globe size={18} className="ml-1 rtl:mr-1 rtl:ml-0" />
+                <span className="mr-1 rtl:ml-1 rtl:mr-0">{t('nav.language')}</span>
+              </button>
+              
+              <div className="mt-3 space-y-2">
+                <Link to="/login" className="block w-full btn-outline text-center">
+                  {t('nav.login')}
+                </Link>
+                <Link to="/verify-phone" className="block w-full btn-primary text-center">
+                  {t('nav.signup')}
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
