@@ -5,7 +5,20 @@ import Layout from '../components/layout/Layout';
 import { Bot, Users, MessageSquare, Phone, ArrowRight, CheckCircle, Zap, Shield, Clock } from 'lucide-react';
 
 const HomePage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+  
+  // Don't render until translations are ready
+  if (!ready) {
+    return (
+      <Layout>
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-primary-600">جاري التحميل...</div>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
   
   return (
     <Layout>
@@ -162,6 +175,8 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, link, color }) => {
+  const { t } = useTranslation();
+  
   return (
     <div className="bg-white p-8 rounded-lg shadow-sm border border-secondary-200 transition-all duration-300 hover:shadow-md group">
       <div className={`inline-block p-4 ${color} text-white rounded-full mb-6 group-hover:scale-110 transition-transform`}>

@@ -4,13 +4,28 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown, Globe, User, LogOut, Settings } from 'lucide-react';
 
 const Header: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n, ready } = useTranslation();
   const [uiState, setUiState] = useState({
     isMenuOpen: false,
     isProfileDropdownOpen: false
   });
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Don't render until translations are ready
+  if (!ready) {
+    return (
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="container-custom py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <div className="text-2xl font-bold text-primary-600">منصة إدارة المستندات</div>
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
 
   // Memoize the current path to avoid unnecessary re-renders
   const currentPath = location.pathname;
