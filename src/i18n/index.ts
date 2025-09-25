@@ -13,28 +13,51 @@ const resources = {
   },
 };
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources,
-    fallbackLng: 'ar', // Set Arabic as default
-    lng: 'ar', // Force Arabic as initial language
-    interpolation: {
-      escapeValue: false,
-    },
-    react: {
-      useSuspense: true,
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-      lookupLocalStorage: 'i18nextLng',
-    },
-  });
+// Initialize i18n with better error handling
+const initI18n = async () => {
+  try {
+    await i18n
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        resources,
+        fallbackLng: 'ar',
+        lng: 'ar',
+        interpolation: {
+          escapeValue: false,
+        },
+        react: {
+          useSuspense: false, // Disable suspense to prevent async issues
+        },
+        detection: {
+          order: ['localStorage', 'navigator'],
+          caches: ['localStorage'],
+          lookupLocalStorage: 'i18nextLng',
+        },
+      });
 
-// Set initial direction
-document.documentElement.dir = 'rtl';
-document.documentElement.lang = 'ar';
+    // Set initial direction
+    document.documentElement.dir = 'rtl';
+    document.documentElement.lang = 'ar';
+    
+    return i18n;
+  } catch (error) {
+    console.error('i18n initialization failed:', error);
+    // Fallback initialization
+    await i18n.init({
+      resources,
+      fallbackLng: 'ar',
+      lng: 'ar',
+      interpolation: {
+        escapeValue: false,
+      },
+      react: {
+        useSuspense: false,
+      },
+    });
+    return i18n;
+  }
+};
 
+export { initI18n };
 export default i18n;
