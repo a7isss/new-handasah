@@ -53,8 +53,15 @@ const Header: React.FC = () => {
       <div className="container-custom py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-primary-600">
-              {t('app.name')}
+            <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+              <img 
+                src="/logo & Icon.svg" 
+                alt="نظم الهندسة المبتكرة" 
+                className="h-10 w-10"
+              />
+              <span className="text-2xl font-bold text-secondary-800">
+                {t('app.name')}
+              </span>
             </Link>
           </div>
           

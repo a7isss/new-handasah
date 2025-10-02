@@ -23,20 +23,20 @@ const HomePage: React.FC = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16 md:py-24">
+      <section className="relative bg-gradient-to-br from-primary-100 to-white text-secondary-800 py-16 md:py-24">
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-secondary-800">
               {t('home.hero.title')}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-100">
+            <p className="text-xl md:text-2xl mb-8 text-secondary-600">
               {t('home.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/services" className="btn bg-white text-primary-700 hover:bg-primary-50">
+              <Link to="/services" className="btn bg-accent-600 text-white hover:bg-accent-700">
                 {t('home.hero.cta')}
               </Link>
-              <Link to="/signup" className="btn bg-transparent border border-white text-white hover:bg-primary-700">
+              <Link to="/signup" className="btn bg-transparent border border-accent-600 text-accent-600 hover:bg-accent-50">
                 {t('home.hero.getStarted')}
               </Link>
             </div>
@@ -45,46 +45,53 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* Main Services Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-primary-100">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">خدماتنا الرئيسية</h2>
+            <h2 className="text-3xl font-bold mb-4 text-secondary-800">خدماتنا الرئيسية</h2>
             <p className="text-xl text-secondary-600">
               حلول متكاملة تجمع بين الابتكار والخبرة
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard
               icon={<Users size={32} />}
-              title="التسويق & البيع بالعمولة"
-              description="استراتيجيات تسويق موجهة ونماذج بيع بالعمولة"
-              link="/services/marketing"
-              color="bg-blue-600"
+              title="خدمات الموارد البشرية"
+              description="حلول ذكية للتوظيف والإدارة"
+              link="/services/hr"
+              color="bg-accent-600"
+            />
+            <ServiceCard
+              icon={<MessageSquare size={32} />}
+              title="قنوات التواصل الموحدة"
+              description="خدمة عملاء متكاملة بالذكاء الاصطناعي"
+              link="/services/communication-channels"
+              color="bg-royal-600"
+            />
+            <ServiceCard
+              icon={<Building size={32} />}
+              title="الحلول الهندسية المتكاملة"
+              description="خدمات هندسية شاملة ومبتكرة"
+              link="/services/integrated-engineering"
+              color="bg-accent-700"
             />
             <ServiceCard
               icon={<Activity size={32} />}
-              title="التشغيل الطبي"
-              description="خدمات إدارية متخصصة لتشغيل المرافق الصحية"
-              link="/services/medical-operations"
-              color="bg-green-600"
-            />
-            <ServiceCard
-              icon={<Zap size={32} />}
-              title="خدمات التكنولوجيا الطبية"
-              description="دمج التكنولوجيا الحديثة في الرعاية الصحية"
+              title="خدمات التقنية الطبية"
+              description="حلول تقنية طبية متطورة"
               link="/services/medical-technology"
-              color="bg-purple-600"
+              color="bg-royal-700"
             />
           </div>
         </div>
       </section>
       
       {/* Features Section */}
-      <section className="py-16 bg-secondary-50">
+      <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">{t('home.features.title')}</h2>
+            <h2 className="text-3xl font-bold mb-4 text-secondary-800">{t('home.features.title')}</h2>
             <p className="text-xl text-secondary-600">
               الجمع بين قوة الذكاء الاصطناعي والخبرة البشرية المتخصصة
             </p>
@@ -116,10 +123,10 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* How It Works */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-primary-100">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">كيف نعمل</h2>
+            <h2 className="text-3xl font-bold mb-4 text-secondary-800">كيف نعمل</h2>
             <p className="text-xl text-secondary-600">
               عملية بسيطة ومؤتمتة لتحقيق أفضل النتائج
             </p>
@@ -149,14 +156,14 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 bg-primary-50">
+      <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">جاهز للبدء؟</h2>
+            <h2 className="text-3xl font-bold mb-4 text-secondary-800">جاهز للبدء؟</h2>
             <p className="text-xl text-secondary-600 mb-8">
               انضم إلى مئات الشركات التي تستخدم خدماتنا المدعومة بالذكاء الاصطناعي
             </p>
-            <Link to="/signup" className="btn-primary">
+            <Link to="/signup" className="btn bg-accent-600 text-white hover:bg-accent-700">
               {t('common.getStarted')}
             </Link>
           </div>

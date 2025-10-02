@@ -57,18 +57,23 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold text-white mb-4">خدماتنا</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/services" className="text-secondary-300 hover:text-white transition-colors">
-                  {t('home.services.service1.title')}
+                <Link to="/services/hr" className="text-secondary-300 hover:text-white transition-colors">
+                  خدمات الموارد البشرية
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-secondary-300 hover:text-white transition-colors">
-                  {t('home.services.service2.title')}
+                <Link to="/services/communication-channels" className="text-secondary-300 hover:text-white transition-colors">
+                  قنوات التواصل الموحدة
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-secondary-300 hover:text-white transition-colors">
-                  {t('home.services.service3.title')}
+                <Link to="/services/integrated-engineering" className="text-secondary-300 hover:text-white transition-colors">
+                  الحلول الهندسية المتكاملة
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/medical-technology" className="text-secondary-300 hover:text-white transition-colors">
+                  خدمات التقنية الطبية
                 </Link>
               </li>
             </ul>
