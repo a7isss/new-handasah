@@ -64,9 +64,9 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold mb-1">البريد الإلكتروني</h3>
                     <p className="text-secondary-600">
-                      info@innovative-engineering.com
+                      support@hndasah.com
                       <br />
-                      support@innovative-engineering.com
+                      sales@hndasah.com
                     </p>
                   </div>
                 </div>
