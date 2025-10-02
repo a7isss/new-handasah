@@ -23,13 +23,13 @@ const HomePage: React.FC = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-100 to-white text-secondary-800 py-16 md:py-24">
+      <section className="relative bg-gradient-to-br from-primary-100 to-white text-black py-16 md:py-24">
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-secondary-800">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black">
               {t('home.hero.title')}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-secondary-600">
+            <p className="text-xl md:text-2xl mb-8 text-black">
               {t('home.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,8 +48,8 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-primary-100">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-secondary-800">خدماتنا الرئيسية</h2>
-            <p className="text-xl text-secondary-600">
+            <h2 className="text-3xl font-bold mb-4 text-black">خدماتنا الرئيسية</h2>
+            <p className="text-xl text-black">
               حلول متكاملة تجمع بين الابتكار والخبرة
             </p>
           </div>
@@ -91,8 +91,8 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-secondary-800">{t('home.features.title')}</h2>
-            <p className="text-xl text-secondary-600">
+            <h2 className="text-3xl font-bold mb-4 text-black">{t('home.features.title')}</h2>
+            <p className="text-xl text-black">
               الجمع بين قوة الذكاء الاصطناعي والخبرة البشرية المتخصصة
             </p>
           </div>
@@ -126,8 +126,8 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-primary-100">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-secondary-800">كيف نعمل</h2>
-            <p className="text-xl text-secondary-600">
+            <h2 className="text-3xl font-bold mb-4 text-black">كيف نعمل</h2>
+            <p className="text-xl text-black">
               عملية بسيطة ومؤتمتة لتحقيق أفضل النتائج
             </p>
           </div>
@@ -159,8 +159,8 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-secondary-800">جاهز للبدء؟</h2>
-            <p className="text-xl text-secondary-600 mb-8">
+            <h2 className="text-3xl font-bold mb-4 text-black">جاهز للبدء؟</h2>
+            <p className="text-xl text-black mb-8">
               انضم إلى مئات الشركات التي تستخدم خدماتنا المدعومة بالذكاء الاصطناعي
             </p>
             <Link to="/signup" className="btn bg-accent-600 text-white hover:bg-accent-700">
@@ -189,11 +189,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, lin
       <div className={`inline-block p-4 ${color} text-white rounded-full mb-6 group-hover:scale-110 transition-transform`}>
         {icon}
       </div>
-      <h3 className="text-xl font-bold mb-4">{title}</h3>
-      <p className="text-secondary-600 mb-6">{description}</p>
+      <h3 className="text-xl font-bold mb-4 text-black">{title}</h3>
+      <p className="text-black mb-6">{description}</p>
       <Link 
         to={link} 
-        className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
+        className="inline-flex items-center text-black hover:text-gray-800 font-medium"
       >
         {t('common.learnMore')}
         <ArrowRight size={16} className="mr-2" />
@@ -214,8 +214,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
       <div className="inline-block p-3 bg-primary-100 text-primary-600 rounded-full mb-4">
         {icon}
       </div>
-      <h3 className="text-lg font-bold mb-2">{title}</h3>
-      <p className="text-secondary-600">{description}</p>
+      <h3 className="text-lg font-bold mb-2 text-black">{title}</h3>
+      <p className="text-black">{description}</p>
     </div>
   );
 };
@@ -238,8 +238,8 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ step, title, description, ico
           {icon}
         </div>
       </div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-secondary-600">{description}</p>
+      <h3 className="text-xl font-bold mb-2 text-black">{title}</h3>
+      <p className="text-black">{description}</p>
     </div>
   );
 };

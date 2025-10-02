@@ -67,25 +67,25 @@ const Header: React.FC = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1 rtl:space-x-reverse">
-            <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.home')}
             </Link>
-            <Link to="/services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.services')}
             </Link>
-            <Link to="/services/hr" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/services/hr" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.hrServices')}
             </Link>
-            <Link to="/services/whatsapp" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/whatsapp') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/services/whatsapp" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/whatsapp') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.whatsappServices')}
             </Link>
-            <Link to="/services/calls" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/calls') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/services/calls" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/calls') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.callServices')}
             </Link>
-            <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.about')}
             </Link>
-            <Link to="/contact" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/contact') ? 'text-primary-600' : 'text-secondary-700 hover:text-primary-600'}`}>
+            <Link to="/contact" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/contact') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.contact')}
             </Link>
             
@@ -123,31 +123,31 @@ const Header: React.FC = () => {
         {uiState.isMenuOpen && (
           <div className="md:hidden mt-4 pb-3 border-t border-secondary-200">
             <div className="pt-2 space-y-1">
-              <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.home')}
               </Link>
-              <Link to="/services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.services')}
               </Link>
-              <Link to="/services/hr" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/services/hr" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.hrServices')}
               </Link>
-              <Link to="/services/whatsapp" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/whatsapp') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/services/whatsapp" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/whatsapp') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.whatsappServices')}
               </Link>
-              <Link to="/services/calls" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/calls') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/services/calls" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/calls') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.callServices')}
               </Link>
-              <Link to="/about" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/about" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.about')}
               </Link>
-              <Link to="/contact" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'text-primary-600' : 'text-secondary-700 hover:bg-secondary-100'}`}>
+              <Link to="/contact" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.contact')}
               </Link>
               
               <button 
                 onClick={toggleLanguage} 
-                className="w-full text-left flex items-center px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:bg-secondary-100"
+                className="w-full text-left flex items-center px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-100"
               >
                 <Globe size={18} className="ml-1 rtl:mr-1 rtl:ml-0" />
                 <span className="mr-1 rtl:ml-1 rtl:mr-0">{t('nav.language')}</span>
