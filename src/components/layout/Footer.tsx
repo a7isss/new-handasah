@@ -79,11 +79,11 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mt-1 ml-2 rtl:mr-0 text-secondary-300" />
-                <span className="text-secondary-300">شارع الرياض، المملكة العربية السعودية</span>
+                <span className="text-secondary-300">حائل، حي الشفا، الرمز البريدي 55437، مبنى رقم 5646، 7217</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="ml-2 rtl:mr-0 text-secondary-300" />
-                <span className="text-secondary-300">+966 12 345 6789</span>
+                <span className="text-secondary-300">+966530628416</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="ml-2 rtl:mr-0 text-secondary-300" />

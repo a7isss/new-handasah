@@ -42,9 +42,9 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold mb-1">العنوان</h3>
                     <p className="text-secondary-600">
-                      الرياض، المملكة العربية السعودية
+                      حائل، حي الشفا، الرمز البريدي 55437
                       <br />
-                      شارع الملك فهد، برج المملكة
+                      مبنى رقم 5646، 7217
                     </p>
                   </div>
                 </div>
@@ -54,9 +54,7 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold mb-1">الهاتف</h3>
                     <p className="text-secondary-600">
-                      +966 11 234 5678
-                      <br />
-                      +966 11 234 5679
+                      +966530628416
                     </p>
                   </div>
                 </div>

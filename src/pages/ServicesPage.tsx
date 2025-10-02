@@ -25,49 +25,49 @@ const ServicesPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* HR Services */}
+            {/* Marketing Services */}
             <MainServiceCard
               icon={<Users size={48} />}
-              title={t('services.hr.title')}
-              description={t('services.hr.description')}
+              title="التسويق & البيع بالعمولة"
+              description="نحن نساعد شركاءنا على زيادة الإيرادات من خلال استراتيجيات تسويق موجهة ونماذج بيع بالعمولة."
               features={[
-                'فحص وتصفية المرشحين بالذكاء الاصطناعي',
-                'مقابلات شخصية مع محترفين متخصصين',
-                'تقييم الملاءمة الثقافية',
-                'ضمان جودة التوظيف'
+                'حملات التسويق بالعمولة',
+                'شراكات البيع بالعمولة',
+                'الترويج الرقمي والاستراتيجيات',
+                'تتبع الأداء والتحليلات'
               ]}
-              link="/services/hr"
+              link="/services/marketing"
               color="bg-blue-500"
               badge="الأكثر طلباً"
             />
             
-            {/* WhatsApp Services */}
+            {/* Medical Operations */}
             <MainServiceCard
               icon={<MessageSquare size={48} />}
-              title={t('services.whatsapp.title')}
-              description={t('services.whatsapp.description')}
+              title="التشغيل الطبي"
+              description="نجعل تشغيل المرافق الصحية أكثر كفاءة من خلال خدماتنا الإدارية المتخصصة."
               features={[
-                'تكامل مع أنظمة ERP',
-                'حملات تسويقية مؤتمتة',
-                'إشعارات تجارية ذكية',
-                'تحليلات متقدمة'
+                'تشغيل المستشفيات والعيادات',
+                'جدولة وإدارة الطاقم الطبي',
+                'صيانة الأجهزة الطبية والامتثال للمعايير',
+                'برامج ضمان الجودة'
               ]}
-              link="/services/whatsapp"
+              link="/services/medical-operations"
               color="bg-green-500"
             />
             
-            {/* Call Services */}
+            {/* Medical Technology */}
             <MainServiceCard
               icon={<Phone size={48} />}
-              title={t('services.calls.title')}
-              description={t('services.calls.description')}
+              title="خدمات التكنولوجيا الطبية"
+              description="نقوم بدمج التكنولوجيا الحديثة في الرعاية الصحية لتحقيق الكفاءة والسلامة."
               features={[
-                'وكيل مبيعات ذكي',
-                'استقبال آلي متطور',
-                'استطلاعات رضا المرضى',
-                'تقارير تحليلية شاملة'
+                'تكامل الأجهزة الطبية',
+                'أنظمة المعلومات الصحية (HIS)',
+                'تدريب المستخدمين ونقل المعرفة',
+                'الدعم الفني والصيانة'
               ]}
-              link="/services/calls"
+              link="/services/medical-technology"
               color="bg-purple-500"
             />
           </div>
@@ -166,7 +166,7 @@ const MainServiceCard: React.FC<MainServiceCardProps> = ({
         to={link} 
         className="btn-primary w-full text-center flex items-center justify-center gap-2"
       >
-        {t('common.learnMore')}
+        تعرف على المزيد
         <ArrowRight size={16} />
       </Link>
     </div>

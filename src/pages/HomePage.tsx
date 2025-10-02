@@ -48,40 +48,33 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">{t('home.services.title')}</h2>
+            <h2 className="text-3xl font-bold mb-4">خدماتنا الرئيسية</h2>
             <p className="text-xl text-secondary-600">
-              ثلاث فئات رئيسية من الخدمات المدعومة بالذكاء الاصطناعي
+              حلول متكاملة تجمع بين الابتكار والخبرة
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               icon={<Users size={32} />}
-              title="خدمات الموارد البشرية"
-              description="حلول ذكية للتوظيف والإدارة"
-              link="/services/hr"
+              title="التسويق & البيع بالعمولة"
+              description="استراتيجيات تسويق موجهة ونماذج بيع بالعمولة"
+              link="/services/marketing"
               color="bg-blue-600"
             />
             <ServiceCard
-              icon={<MessageSquare size={32} />}
-              title="قنوات التواصل الموحدة"
-              description="خدمة عملاء متكاملة بالذكاء الاصطناعي"
-              link="/services/communication-channels"
+              icon={<Activity size={32} />}
+              title="التشغيل الطبي"
+              description="خدمات إدارية متخصصة لتشغيل المرافق الصحية"
+              link="/services/medical-operations"
               color="bg-green-600"
             />
             <ServiceCard
-              icon={<Building size={32} />}
-              title="الحلول الهندسية المتكاملة"
-              description="خدمات هندسية شاملة ومبتكرة"
-              link="/services/integrated-engineering"
-              color="bg-purple-600"
-            />
-            <ServiceCard
-              icon={<Activity size={32} />}
-              title="خدمات التقنية الطبية"
-              description="حلول تقنية طبية متطورة"
+              icon={<Zap size={32} />}
+              title="خدمات التكنولوجيا الطبية"
+              description="دمج التكنولوجيا الحديثة في الرعاية الصحية"
               link="/services/medical-technology"
-              color="bg-red-600"
+              color="bg-purple-600"
             />
           </div>
         </div>
