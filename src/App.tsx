@@ -8,6 +8,9 @@ import ServicesPage from './pages/ServicesPage';
 import HRServicesPage from './pages/services/HRServicesPage';
 import WhatsAppServicesPage from './pages/services/WhatsAppServicesPage';
 import CallServicesPage from './pages/services/CallServicesPage';
+import IntegratedEngineeringSolutionsPage from './pages/services/IntegratedEngineeringSolutionsPage';
+import MedicalTechnologyServicesPage from './pages/services/MedicalTechnologyServicesPage';
+import UnifiedCommunicationChannelsPage from './pages/services/UnifiedCommunicationChannelsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/auth/LoginPage';
@@ -37,6 +40,9 @@ function App() {
       <Route path="/services/hr" element={<HRServicesPage />} />
       <Route path="/services/whatsapp" element={<WhatsAppServicesPage />} />
       <Route path="/services/calls" element={<CallServicesPage />} />
+      <Route path="/services/integrated-engineering" element={<IntegratedEngineeringSolutionsPage />} />
+      <Route path="/services/medical-technology" element={<MedicalTechnologyServicesPage />} />
+      <Route path="/services/communication-channels" element={<UnifiedCommunicationChannelsPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/login" element={<LoginPage />} />

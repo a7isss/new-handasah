@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout/Layout';
-import { Bot, Users, MessageSquare, Phone, ArrowRight, CheckCircle, Zap, Shield, Clock } from 'lucide-react';
+import { Bot, Users, MessageSquare, Phone, ArrowRight, CheckCircle, Zap, Shield, Clock, Building, Activity } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const { t, ready } = useTranslation();
@@ -54,27 +54,34 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard
               icon={<Users size={32} />}
-              title={t('home.services.hr.title')}
-              description={t('home.services.hr.description')}
+              title="خدمات الموارد البشرية"
+              description="حلول ذكية للتوظيف والإدارة"
               link="/services/hr"
-              color="bg-blue-500"
+              color="bg-blue-600"
             />
             <ServiceCard
               icon={<MessageSquare size={32} />}
-              title={t('home.services.whatsapp.title')}
-              description={t('home.services.whatsapp.description')}
-              link="/services/whatsapp"
-              color="bg-green-500"
+              title="قنوات التواصل الموحدة"
+              description="خدمة عملاء متكاملة بالذكاء الاصطناعي"
+              link="/services/communication-channels"
+              color="bg-green-600"
             />
             <ServiceCard
-              icon={<Phone size={32} />}
-              title={t('home.services.calls.title')}
-              description={t('home.services.calls.description')}
-              link="/services/calls"
-              color="bg-purple-500"
+              icon={<Building size={32} />}
+              title="الحلول الهندسية المتكاملة"
+              description="خدمات هندسية شاملة ومبتكرة"
+              link="/services/integrated-engineering"
+              color="bg-purple-600"
+            />
+            <ServiceCard
+              icon={<Activity size={32} />}
+              title="خدمات التقنية الطبية"
+              description="حلول تقنية طبية متطورة"
+              link="/services/medical-technology"
+              color="bg-red-600"
             />
           </div>
         </div>
