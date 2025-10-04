@@ -12,7 +12,7 @@ const HRServicesPage: React.FC = () => {
       return [
         {
           title: 'الخدمات الطبية للترميز',
-          description: 'الأتمتة الدقيقة لترميز ICD-10-مدعومة بمحرك إيشر AI.',
+          description: 'الأتمتة الدقيقة لترميز ICD-10-مدعومة بمحرك إنشور AI.',
           icon: <FileText size={24} />,
           link: '/services/ensure/medical-coding'
         },
@@ -102,7 +102,7 @@ const HRServicesPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">{i18n.language === 'ar' ? 'منصة إيشر - إدارة دورة الإيرادات الطبية' : 'Ensure - Revenue Cycle Management Platform'}</h2>
+            <h2 className="text-3xl font-bold mb-4">{i18n.language === 'ar' ? 'منصة إنشور - إدارة دورة الإيرادات الطبية' : 'Ensure - Revenue Cycle Management Platform'}</h2>
             <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
               {i18n.language === 'ar' ? t('services.ensure.landing.overviewText') : 'Welcome to Nathm Alhandasah\'s Ensure - a revolutionary Revenue Cycle Management platform designed to optimize healthcare financial operations. Our comprehensive suite of solutions addresses every aspect of the RCM lifecycle, from accurate medical coding to claims management and sophisticated analytics.'}
             </p>
