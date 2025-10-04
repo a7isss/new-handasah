@@ -6,11 +6,15 @@ import { useTranslation } from 'react-i18next';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import HRServicesPage from './pages/services/HRServicesPage';
+import MedicalCodingServicesPage from './pages/services/MedicalCodingServicesPage';
+import ClinicalDocumentationPage from './pages/services/ClinicalDocumentationPage';
+import ClaimsManagementPage from './pages/services/ClaimsManagementPage';
+import HealthcareAnalyticsPage from './pages/services/HealthcareAnalyticsPage';
+import ClinicalDecisionSupportPage from './pages/services/ClinicalDecisionSupportPage';
 import WhatsAppServicesPage from './pages/services/WhatsAppServicesPage';
 import CallServicesPage from './pages/services/CallServicesPage';
 import IntegratedEngineeringSolutionsPage from './pages/services/IntegratedEngineeringSolutionsPage';
 import MedicalTechnologyServicesPage from './pages/services/MedicalTechnologyServicesPage';
-import UnifiedCommunicationChannelsPage from './pages/services/UnifiedCommunicationChannelsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/auth/LoginPage';
@@ -37,12 +41,17 @@ function App() {
       {/* Public Routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/hr" element={<HRServicesPage />} />
+      <Route path="/services/hr-services" element={<HRServicesPage />} />
+      <Route path="/services/ensure/medical-coding" element={<MedicalCodingServicesPage />} />
+      <Route path="/services/ensure/clinical-documentation" element={<ClinicalDocumentationPage />} />
+      <Route path="/services/ensure/claims-management" element={<ClaimsManagementPage />} />
+      <Route path="/services/ensure/healthcare-analytics" element={<HealthcareAnalyticsPage />} />
+      <Route path="/services/ensure/clinical-decision-support" element={<ClinicalDecisionSupportPage />} />
       <Route path="/services/whatsapp" element={<WhatsAppServicesPage />} />
       <Route path="/services/calls" element={<CallServicesPage />} />
       <Route path="/services/integrated-engineering" element={<IntegratedEngineeringSolutionsPage />} />
       <Route path="/services/medical-technology" element={<MedicalTechnologyServicesPage />} />
-      <Route path="/services/communication-channels" element={<UnifiedCommunicationChannelsPage />} />
+
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/login" element={<LoginPage />} />

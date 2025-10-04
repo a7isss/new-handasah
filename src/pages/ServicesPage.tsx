@@ -56,6 +56,21 @@ const ServicesPage: React.FC = () => {
               color="bg-green-500"
             />
             
+            {/* Revenue Cycle Management */}
+            <MainServiceCard
+              icon={<CheckCircle size={48} />}
+              title="إدارة دورة الإيرادات الطبية (RCM)"
+              description="حلول ذكية لإدارة دورة الإيرادات في القطاع الصحي باستخدام الذكاء الاصطناعي والتحليلات المتقدمة."
+              features={[
+                'ترميز إدارة المطالبات الطبية',
+                'التوثيق السريري الآلي',
+                'إدارة المطالبات والتحليلات',
+                'دعم اتخاذ القرارات السريرية'
+              ]}
+              link="/services/hr-services"
+              color="bg-blue-600"
+            />
+
             {/* Medical Technology */}
             <MainServiceCard
               icon={<Phone size={48} />}
