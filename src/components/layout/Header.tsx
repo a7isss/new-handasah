@@ -73,8 +73,8 @@ const Header: React.FC = () => {
             <Link to="/services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.services')}
             </Link>
-            <Link to="/services/hr" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.hrServices')}
+            <Link to="/services/hr-services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
+              {t('nav.ensureServices')}
             </Link>
             <Link to="/services/whatsapp" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/whatsapp') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.whatsappServices')}
@@ -129,8 +129,8 @@ const Header: React.FC = () => {
               <Link to="/services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.services')}
               </Link>
-              <Link to="/services/hr" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.hrServices')}
+              <Link to="/services/hr-services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
+                {t('nav.ensureServices')}
               </Link>
               <Link to="/services/whatsapp" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/whatsapp') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.whatsappServices')}

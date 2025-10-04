@@ -5,40 +5,79 @@ import Layout from '../../components/layout/Layout';
 import { Users, Bot, Target, CheckCircle, ArrowRight, Star, Briefcase, TrendingUp, Stethoscope, FileText, DollarSign, BarChart3, Brain } from 'lucide-react';
 
 const HRServicesPage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-  const serviceAreas = [
-    {
-      title: 'Medical Coding Services',
-      description: 'Precision ICD-10-AM and ICD-10-CM coding automation powered by Ensure AI.',
-      icon: <FileText size={24} />,
-      link: '/services/ensure/medical-coding'
-    },
-    {
-      title: 'Clinical Documentation',
-      description: 'Transform raw clinical notes into structured, survey-ready documentation instantly.',
-      icon: <Stethoscope size={24} />,
-      link: '/services/ensure/clinical-documentation'
-    },
-    {
-      title: 'Claims Management',
-      description: 'Comprehensive claims auditing, pre-authorization processing, and RCM optimization.',
-      icon: <DollarSign size={24} />,
-      link: '/services/ensure/claims-management'
-    },
-    {
-      title: 'Healthcare Analytics',
-      description: 'Data-driven insights for strategic decision-making, revenue optimization, and operational excellence.',
-      icon: <BarChart3 size={24} />,
-      link: '/services/ensure/healthcare-analytics'
-    },
-    {
-      title: 'Clinical Decision Support',
-      description: 'AI-powered clinical decision support tools that enhance diagnostic accuracy and improve patient outcomes.',
-      icon: <Brain size={24} />,
-      link: '/services/ensure/clinical-decision-support'
+  const getServiceAreas = () => {
+    if (i18n.language === 'ar') {
+      return [
+        {
+          title: 'الخدمات الطبية للترميز',
+          description: 'الأتمتة الدقيقة لترميز ICD-10-مدعومة بمحرك إيشر AI.',
+          icon: <FileText size={24} />,
+          link: '/services/ensure/medical-coding'
+        },
+        {
+          title: 'التوثيق السريري',
+          description: 'تحويل الملاحظات السريرية إلى وثائق منظمة جاهزة للمسح.',
+          icon: <Stethoscope size={24} />,
+          link: '/services/ensure/clinical-documentation'
+        },
+        {
+          title: 'إدارة المطالبات',
+          description: 'تدقيق المطالبات الشامل، معالجة التفويض المسبق، والتحسين لدورة RCM.',
+          icon: <DollarSign size={24} />,
+          link: '/services/ensure/claims-management'
+        },
+        {
+          title: 'تحليلات الرعاية الصحية',
+          description: 'تحليلات داتا مزودة للتخذيذ القرارات، تحسين الإيرادات، والتمييز العملياتي.',
+          icon: <BarChart3 size={24} />,
+          link: '/services/ensure/healthcare-analytics'
+        },
+        {
+          title: 'دعم اتخاذ القرارات السريرية',
+          description: 'أدوات دعم الطبيب المدفوع بالذكاء الاصطناعي لتعزيز دقة التشخيص وتحسين نتائج المرضى.',
+          icon: <Brain size={24} />,
+          link: '/services/ensure/clinical-decision-support'
+        }
+      ];
+    } else {
+      return [
+        {
+          title: 'Medical Coding Services',
+          description: 'Precision ICD-10-AM and ICD-10-CM coding automation powered by Ensure AI.',
+          icon: <FileText size={24} />,
+          link: '/services/ensure/medical-coding'
+        },
+        {
+          title: 'Clinical Documentation',
+          description: 'Transform raw clinical notes into structured, survey-ready documentation instantly.',
+          icon: <Stethoscope size={24} />,
+          link: '/services/ensure/clinical-documentation'
+        },
+        {
+          title: 'Claims Management',
+          description: 'Comprehensive claims auditing, pre-authorization processing, and RCM optimization.',
+          icon: <DollarSign size={24} />,
+          link: '/services/ensure/claims-management'
+        },
+        {
+          title: 'Healthcare Analytics',
+          description: 'Data-driven insights for strategic decision-making, revenue optimization, and operational excellence.',
+          icon: <BarChart3 size={24} />,
+          link: '/services/ensure/healthcare-analytics'
+        },
+        {
+          title: 'Clinical Decision Support',
+          description: 'AI-powered clinical decision support tools that enhance diagnostic accuracy and improve patient outcomes.',
+          icon: <Brain size={24} />,
+          link: '/services/ensure/clinical-decision-support'
+        }
+      ];
     }
-  ];
+  };
+
+  const serviceAreas = getServiceAreas();
 
   return (
     <Layout>
