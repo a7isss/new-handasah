@@ -86,13 +86,13 @@ const HRServicesPage: React.FC = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Elevate Your Healthcare Revenue Cycle with Nathm Alhandasah's Ensure
+              {i18n.language === 'ar' ? t('services.ensure.landing.heroTitle') : 'Elevate Your Healthcare Revenue Cycle with Nathm Alhandasah\'s Ensure'}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Transform your healthcare operations with Nathm Alhandasah Company's comprehensive RCM solutions. Our advanced technology streamlines financial workflows, optimizes revenue capture, and ensures compliance while allowing your clinical teams to focus on patient care.
+              {i18n.language === 'ar' ? t('services.ensure.landing.heroSubtitle') : 'Transform your healthcare operations with Nathm Alhandasah Company\'s comprehensive RCM solutions. Our advanced technology streamlines financial workflows, optimizes revenue capture, and ensures compliance while allowing your clinical teams to focus on patient care.'}
             </p>
             <Link to="/contact" className="btn bg-white text-blue-700 hover:bg-blue-50">
-              Schedule a Demo Consultation
+              {i18n.language === 'ar' ? t('services.ensure.landing.cta.demo') : 'Schedule a Demo Consultation'}
             </Link>
           </div>
         </div>
@@ -102,9 +102,9 @@ const HRServicesPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Ensure - Revenue Cycle Management Platform</h2>
+            <h2 className="text-3xl font-bold mb-4">{i18n.language === 'ar' ? 'منصة إيشر - إدارة دورة الإيرادات الطبية' : 'Ensure - Revenue Cycle Management Platform'}</h2>
             <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-              Welcome to Nathm Alhandasah's Ensure - a revolutionary Revenue Cycle Management platform designed to optimize healthcare financial operations. Our comprehensive suite of solutions addresses every aspect of the RCM lifecycle, from accurate medical coding to claims management and sophisticated analytics.
+              {i18n.language === 'ar' ? t('services.ensure.landing.overviewText') : 'Welcome to Nathm Alhandasah\'s Ensure - a revolutionary Revenue Cycle Management platform designed to optimize healthcare financial operations. Our comprehensive suite of solutions addresses every aspect of the RCM lifecycle, from accurate medical coding to claims management and sophisticated analytics.'}
             </p>
           </div>
         </div>
@@ -114,9 +114,9 @@ const HRServicesPage: React.FC = () => {
       <section className="py-16 bg-secondary-50">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Core Service Areas</h2>
+            <h2 className="text-3xl font-bold mb-4">{i18n.language === 'ar' ? 'المناطق الخدمية الأساسية' : 'Core Service Areas'}</h2>
             <p className="text-xl text-secondary-600">
-              Our AI-powered platform integrates seamlessly with existing healthcare systems to minimize administrative burden while maximizing revenue potential.
+              {i18n.language === 'ar' ? 'منصتنا المدعومة بالذكاء الاصطناعي تتكامل بسلاسة مع الأنظمة الصحية الموجودة لتقليل العبء الإداري مع تعظيم الإمكانات الإيرادية.' : 'Our AI-powered platform integrates seamlessly with existing healthcare systems to minimize administrative burden while maximizing revenue potential.'}
             </p>
           </div>
 
@@ -132,29 +132,29 @@ const HRServicesPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Ensure by Nathm Alhandasah?</h2>
+            <h2 className="text-3xl font-bold mb-4">{i18n.language === 'ar' ? t('services.ensure.landing.whyChooseEnsure') : 'Why Choose Ensure by Nathm Alhandasah?'}</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ValueProposition
               icon={<Star size={32} />}
-              title="Proven Healthcare Expertise"
-              description="Built by Nathm Alhandasah Company with deep industry knowledge and regulatory compliance expertise."
+              title={i18n.language === 'ar' ? 'خبرة صحية مثبتة' : 'Proven Healthcare Expertise'}
+              description={i18n.language === 'ar' ? 'بناء من قبل شركة نظم الهندسة مع معرفة عميقة في الصناعة وخبرة في الامتثال التنظيمي.' : 'Built by Nathm Alhandasah Company with deep industry knowledge and regulatory compliance expertise.'}
             />
             <ValueProposition
               icon={<Bot size={32} />}
-              title="AI-Powered Efficiency"
-              description="Advanced artificial intelligence algorithms ensure unprecedented accuracy and workflow optimization."
+              title={i18n.language === 'ar' ? 'كفاءة مدعومة بالذكاء الاصطناعي' : 'AI-Powered Efficiency'}
+              description={i18n.language === 'ar' ? 'خوارزميات ذكاء اصطناعي متقدمة تضمن دقة غير مسبوقة وتحسين سير العمل.' : 'Advanced artificial intelligence algorithms ensure unprecedented accuracy and workflow optimization.'}
             />
             <ValueProposition
               icon={<TrendingUp size={32} />}
-              title="Seamless Integration"
-              description="Works seamlessly with existing EHR systems, practice management platforms, and healthcare workflows."
+              title={i18n.language === 'ar' ? 'تكامل سلس' : 'Seamless Integration'}
+              description={i18n.language === 'ar' ? 'تعمل بسلاسة مع أنظمة السجلات الصحية الإلكترونية ومنصات إدارة الممارسة وسير العمل الصحي الحالية.' : 'Works seamlessly with existing EHR systems, practice management platforms, and healthcare workflows.'}
             />
             <ValueProposition
               icon={<CheckCircle size={32} />}
-              title="Compliance-First Approach"
-              description="Built to meet global healthcare standards including NPHIES, FHIR, and regional regulatory requirements."
+              title={i18n.language === 'ar' ? 'نهج الامتثال أولاً' : 'Compliance-First Approach'}
+              description={i18n.language === 'ar' ? 'بناءً لتلبية المعايير الصحية العالمية بما في ذلك NPHIES وFHIR والمتطلبات التنظيمية الإقليمية.' : 'Built to meet global healthcare standards including NPHIES, FHIR, and regional regulatory requirements.'}
             />
           </div>
         </div>
@@ -164,29 +164,29 @@ const HRServicesPage: React.FC = () => {
       <section className="py-16 bg-secondary-50">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold mb-4">{i18n.language === 'ar' ? t('services.ensure.landing.faq.title') : 'Frequently Asked Questions'}</h2>
           </div>
 
           <div className="max-w-3xl mx-auto space-y-6">
             <FAQItem
-              question="What is Revenue Cycle Management?"
-              answer="Revenue Cycle Management (RCM) encompasses all administrative and clinical functions that contribute to the capture, management, and collection of patient service revenue. Ensure automates and optimizes every stage of this complex process."
+              question={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.whatIsRCM.q') : 'What is Revenue Cycle Management?'}
+              answer={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.whatIsRCM.a') : 'Revenue Cycle Management (RCM) encompasses all administrative and clinical functions that contribute to the capture, management, and collection of patient service revenue. Ensure automates and optimizes every stage of this complex process.'}
             />
             <FAQItem
-              question="How does Ensure improve revenue capture?"
-              answer="Through automated claims auditing, intelligent coding assistance, pre-authorization processing, and predictive analytics, Ensure helps healthcare organizations maximize reimbursement while minimizing denials and administrative costs."
+              question={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.howImproveRevenueCapture.q') : 'How does Ensure improve revenue capture?'}
+              answer={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.howImproveRevenueCapture.a') : 'Through automated claims auditing, intelligent coding assistance, pre-authorization processing, and predictive analytics, Ensure helps healthcare organizations maximize reimbursement while minimizing denials and administrative costs.'}
             />
             <FAQItem
-              question="Is Ensure suitable for my practice size?"
-              answer="Yes, our platform is designed to scale - from solo practitioners to multi-facility healthcare systems. Our modular approach allows you to implement only the solutions you need, with the flexibility to expand as your practice grows."
+              question={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.suitableForPracticeSize.q') : 'Is Ensure suitable for my practice size?'}
+              answer={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.suitableForPracticeSize.a') : 'Yes, our platform is designed to scale - from solo practitioners to multi-facility healthcare systems. Our modular approach allows you to implement only the solutions you need, with the flexibility to expand as your practice grows.'}
             />
             <FAQItem
-              question="How long does implementation take?"
-              answer="Most implementations are completed within 2-4 weeks, depending on your existing systems and the specific modules you choose to deploy. Our team provides comprehensive training and ongoing support throughout the process."
+              question={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.implementationTimeline.q') : 'How long does implementation take?'}
+              answer={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.implementationTimeline.a') : 'Most implementations are completed within 2-4 weeks, depending on your existing systems and the specific modules you choose to deploy. Our team provides comprehensive training and ongoing support throughout the process.'}
             />
             <FAQItem
-              question="What kind of results can I expect?"
-              answer="Clients typically see improvements in revenue capture rates, reduced claim denials, and significant time savings in administrative tasks within the first 90 days of implementation."
+              question={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.expectedResults.q') : 'What kind of results can I expect?'}
+              answer={i18n.language === 'ar' ? t('services.ensure.landing.faq.questions.expectedResults.a') : 'Clients typically see improvements in revenue capture rates, reduced claim denials, and significant time savings in administrative tasks within the first 90 days of implementation.'}
             />
           </div>
         </div>
@@ -195,19 +195,19 @@ const HRServicesPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-16 bg-blue-50">
         <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Healthcare Revenue Cycle?</h2>
+          <h2 className="text-3xl font-bold mb-6">{i18n.language === 'ar' ? 'هل أنت مستعد لتحويل دورة الإيرادات الصحية الخاصة بك؟' : 'Ready to Transform Your Healthcare Revenue Cycle?'}</h2>
           <p className="text-xl text-secondary-600 mb-8">
-            Contact our healthcare technology specialists today for a personalized demonstration and implementation plan.
+            {i18n.language === 'ar' ? 'تواصل مع متخصصي التكنولوجيا الصحية اليوم لعرض توضيحي شخصي وخطة تنفيذ.' : 'Contact our healthcare technology specialists today for a personalized demonstration and implementation plan.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary">
-              Request Demo
+              {i18n.language === 'ar' ? t('services.ensure.landing.cta.demo') : 'Request Demo'}
             </Link>
             <Link to="/services" className="btn-secondary">
-              Learn More
+              {i18n.language === 'ar' ? 'اعرف المزيد' : 'Learn More'}
             </Link>
             <Link to="/contact" className="btn-secondary">
-              Schedule Consultation
+              {i18n.language === 'ar' ? t('services.ensure.landing.cta.consultation') : 'Schedule Consultation'}
             </Link>
           </div>
         </div>
