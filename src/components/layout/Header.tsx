@@ -76,11 +76,8 @@ const Header: React.FC = () => {
             <Link to="/services/hr-services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.ensureServices')}
             </Link>
-            <Link to="/services/whatsapp" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/whatsapp') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.whatsappServices')}
-            </Link>
-            <Link to="/services/calls" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/calls') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.callServices')}
+            <Link to="/services/ai-communication" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/ai-communication') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
+              {t('nav.aiCommunicationServices')}
             </Link>
             <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.about')}
@@ -132,11 +129,8 @@ const Header: React.FC = () => {
               <Link to="/services/hr-services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.ensureServices')}
               </Link>
-              <Link to="/services/whatsapp" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/whatsapp') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.whatsappServices')}
-              </Link>
-              <Link to="/services/calls" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/calls') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.callServices')}
+              <Link to="/services/ai-communication" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/ai-communication') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
+                {t('nav.aiCommunicationServices')}
               </Link>
               <Link to="/about" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.about')}

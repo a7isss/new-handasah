@@ -11,8 +11,7 @@ import ClinicalDocumentationPage from './pages/services/ClinicalDocumentationPag
 import ClaimsManagementPage from './pages/services/ClaimsManagementPage';
 import HealthcareAnalyticsPage from './pages/services/HealthcareAnalyticsPage';
 import ClinicalDecisionSupportPage from './pages/services/ClinicalDecisionSupportPage';
-import WhatsAppServicesPage from './pages/services/WhatsAppServicesPage';
-import CallServicesPage from './pages/services/CallServicesPage';
+import AICommunicationServicesPage from './pages/services/AICommunicationServicesPage';
 import IntegratedEngineeringSolutionsPage from './pages/services/IntegratedEngineeringSolutionsPage';
 import MedicalTechnologyServicesPage from './pages/services/MedicalTechnologyServicesPage';
 import AboutPage from './pages/AboutPage';
@@ -47,8 +46,7 @@ function App() {
       <Route path="/services/ensure/claims-management" element={<ClaimsManagementPage />} />
       <Route path="/services/ensure/healthcare-analytics" element={<HealthcareAnalyticsPage />} />
       <Route path="/services/ensure/clinical-decision-support" element={<ClinicalDecisionSupportPage />} />
-      <Route path="/services/whatsapp" element={<WhatsAppServicesPage />} />
-      <Route path="/services/calls" element={<CallServicesPage />} />
+      <Route path="/services/ai-communication" element={<AICommunicationServicesPage />} />
       <Route path="/services/integrated-engineering" element={<IntegratedEngineeringSolutionsPage />} />
       <Route path="/services/medical-technology" element={<MedicalTechnologyServicesPage />} />
 
