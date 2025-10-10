@@ -35,7 +35,7 @@ const MedicalOperationsPage: React.FC = () => {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              نظم الهندسة المبتكرة
+              التشغيل الطبي
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-emerald-100">
               ريادة الأداء الطبي، واستثنائية في تجربة المريض
