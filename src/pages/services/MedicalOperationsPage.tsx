@@ -69,19 +69,19 @@ const MedicalOperationsPage: React.FC = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-emerald-50 p-6 rounded-lg text-center">
                   <Settings className="text-emerald-600 mx-auto mb-3" size={32} />
-                  <h3 className="font-bold text-emerald-800">كفاءة التشغيل</h3>
+                <h3 className="font-bold text-black">كفاءة التشغيل</h3>
                 </div>
                 <div className="bg-emerald-50 p-6 rounded-lg text-center">
                   <Heart className="text-emerald-600 mx-auto mb-3" size={32} />
-                  <h3 className="font-bold text-emerald-800">تجربة المريض</h3>
+                  <h3 className="font-bold text-black">تجربة المريض</h3>
                 </div>
                 <div className="bg-emerald-50 p-6 rounded-lg text-center">
                   <TrendingUp className="text-emerald-600 mx-auto mb-3" size={32} />
-                  <h3 className="font-bold text-emerald-800">الأداء الطبي</h3>
+                  <h3 className="font-bold text-black">الأداء الطبي</h3>
                 </div>
                 <div className="bg-emerald-50 p-6 rounded-lg text-center">
                   <Award className="text-emerald-600 mx-auto mb-3" size={32} />
-                  <h3 className="font-bold text-emerald-800">التميز الصحي</h3>
+                  <h3 className="font-bold text-black">التميز الصحي</h3>
                 </div>
               </div>
             </div>
@@ -203,14 +203,14 @@ const MedicalOperationsPage: React.FC = () => {
               <div className="bg-gradient-to-r from-emerald-100 to-teal-100 p-8 rounded-lg border border-emerald-200">
                 <Lightbulb className="text-emerald-600 mx-auto mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-3">شعار 1</h3>
-                <p className="text-lg text-emerald-800">
+                <p className="text-lg text-black">
                   "من كفاءة العمليات إلى ابتسامة المريض: نصنع الفرق."
                 </p>
               </div>
               <div className="bg-gradient-to-r from-emerald-100 to-teal-100 p-8 rounded-lg border border-emerald-200">
                 <Zap className="text-emerald-600 mx-auto mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-3">شعار 2</h3>
-                <p className="text-lg text-emerald-800">
+                <p className="text-lg text-black">
                   "نحلل. نخطط. ننفذ. نقيس النجاح. نضمن رضاكم ورضا مرضاكم."
                 </p>
               </div>
