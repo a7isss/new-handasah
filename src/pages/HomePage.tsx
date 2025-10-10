@@ -50,16 +50,16 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-black">خدماتنا الرئيسية</h2>
             <p className="text-xl text-black">
-              حلول متكاملة تجمع بين الابتكار والخبرة
+              خدمات متخصصة في التطبيب والتشغيل الطبي ودورة الإيرادات
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard
               icon={<Users size={32} />}
-              title="خدمات الموارد البشرية"
-              description="حلول ذكية للتوظيف والإدارة"
-              link="/services/hr"
+              title="التشغيل الطبي"
+              description="ريادة الأداء الطبي واستثنائية تجربة المريض"
+              link="/services/medical-operations"
               color="bg-accent-600"
             />
             <ServiceCard
@@ -71,16 +71,16 @@ const HomePage: React.FC = () => {
             />
             <ServiceCard
               icon={<Building size={32} />}
-              title="الحلول الهندسية المتكاملة"
-              description="خدمات هندسية شاملة ومبتكرة"
-              link="/services/integrated-engineering"
+              title="دورة الإيرادات الطبية"
+              description="إدارة شاملة لدورة الإيرادات والكود الطبي"
+              link="/services/ensure"
               color="bg-accent-700"
             />
             <ServiceCard
               icon={<Activity size={32} />}
-              title="خدمات التقنية الطبية"
-              description="حلول تقنية طبية متطورة"
-              link="/services/medical-technology"
+              title="حلول الرعاية الصحية الذكية"
+              description="تحليل البيانات الطبية واتخاذ قرارات سريرية مدعومة بالذكاء الاصطناعي"
+              link="/services/health-solutions"
               color="bg-royal-700"
             />
           </div>
@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-black">{t('home.features.title')}</h2>
             <p className="text-xl text-black">
-              الجمع بين قوة الذكاء الاصطناعي والخبرة البشرية المتخصصة
+              التحول الرقمي والكفاءة التشغيلية
             </p>
           </div>
           
