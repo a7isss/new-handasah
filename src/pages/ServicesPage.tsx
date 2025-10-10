@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout/Layout';
-import { Users, MessageSquare, Phone, Bot, ArrowRight, CheckCircle, Star } from 'lucide-react';
+import { Users, MessageSquare, Phone, Bot, ArrowRight, CheckCircle, Star, Cpu, Zap } from 'lucide-react';
 
 const ServicesPage: React.FC = () => {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ const ServicesPage: React.FC = () => {
       {/* Main Services */}
       <section className="py-16 bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {/* Marketing Services */}
             <MainServiceCard
               icon={<Users size={48} />}
@@ -84,6 +84,22 @@ const ServicesPage: React.FC = () => {
               ]}
               link="/services/medical-technology"
               color="bg-purple-500"
+            />
+
+            {/* AI Engineering Services */}
+            <MainServiceCard
+              icon={<Cpu size={48} />}
+              title="خدمات الهندسة الذكية"
+              description="نطور حلول الذكاء الاصطناعي المخصصة والمتقدمة للتحليلات والأتمتة الذكية."
+              features={[
+                'تطوير نماذج الذكاء الاصطناعي المخصصة',
+                'أنظمة التعلم الآلي والأتمتة',
+                'حلول التحليلات المتقدمة والبيانات الكبيرة',
+                'التكامل مع الأنظمة الموجودة والابتكار المستمر'
+              ]}
+              link="/services/ai-engineering"
+              color="bg-red-500"
+              badge="قريباً"
             />
           </div>
         </div>

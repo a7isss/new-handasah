@@ -16,7 +16,9 @@ import {
   Calendar,
   BarChart,
   Settings,
-  Smartphone
+  Smartphone,
+  Award,
+  Target
 } from 'lucide-react';
 
 const AICommunicationServicesPage: React.FC = () => {
@@ -231,20 +233,100 @@ const AICommunicationServicesPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Why Choose AI Communication Section */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">لماذا تختارون هندسة التواصل الذكي؟</h2>
+            <p className="text-xl text-secondary-600">
+              لأننا لا نقدم حلولًا تقنية فحسب، بل ننفذ استراتيجيات متكاملة تحقق نتائج قابلة للقياس
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <WhyChooseCard
+              icon={<Award size={32} />}
+              title="خبرة عملية عميقة"
+              description="فريقنا مكون من خبراء في الذكاء الاصطناعي، وإدارة العملاء، وتطوير الحلول التقنية، يمتلكون فهمًا دقيقًا للتحديات الفريدة التي تواجه القطاعات المختلفة في منطقتنا."
+            />
+            <WhyChooseCard
+              icon={<Zap size={32} />}
+              title="نهج متكامل"
+              description="نربط بشكل وثيق بين التقنيات الذكية وجودة تجربة العملاء، فلا يمكن تحقيق تجربة متميزة بدون نظام تقني متطور، والعكس صحيح."
+            />
+            <WhyChooseCard
+              icon={<Target size={32} />}
+              title="حلول مخصصة"
+              description="نرفض الحلول الجاهزة. نعمل على تحليل احتياجات مؤسستكم بدقة لنصمم حلولًا تناسب أهدافكم الاستراتيجية ومتطلباتكم الخاصة."
+            />
+            <WhyChooseCard
+              icon={<BarChart size={32} />}
+              title="الأثر القابل للقياس"
+              description="نلتزم بتقديم تقارير دورية واضحة تعكس التقدم في مؤشرات الأداء الرئيسية مثل: معدل الاستجابة، نسبة رضا العملاء، كفاءة التواصل، ومعدل التحويل."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Key Highlights */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">نقاط القوة الرئيسية</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-lg shadow-sm border border-blue-200">
+                <Brain className="text-blue-600 mx-auto mb-4" size={48} />
+                <h3 className="text-xl font-bold mb-3">شعار 1</h3>
+                <p className="text-lg text-blue-800">
+                  "من الذكاء الاصطناعي إلى التواصل الإنساني: نصنع الفرق في تجربة العملاء."
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-sm border border-blue-200">
+                <Zap className="text-blue-600 mx-auto mb-4" size={48} />
+                <h3 className="text-xl font-bold mb-3">شعار 2</h3>
+                <p className="text-lg text-blue-800">
+                  "نحلل. نطور. ننفذ. نقيس النجاح. نضمن رضاكم ورضا عملائكم."
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 p-8 bg-white/80 rounded-lg border border-blue-200">
+              <Users className="text-blue-600 mx-auto mb-4" size={48} />
+              <h3 className="text-xl font-bold mb-3">نقطة القوة الأساسية</h3>
+              <p className="text-lg text-secondary-700">
+                "لا نكتفي بتطوير التقنيات، بل نهتم بتغيير السلوكيات لبناء ثقافة مؤسسية تركز على العميل وتجربته الاستثنائية."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-6">جاهز لثورة التواصل الذكي؟</h2>
-          <p className="text-xl text-secondary-600 mb-8">
+          <p className="text-xl mb-8 text-blue-100">
             حول تجربتك مع العملاء إلى تجربة استثنائية مع الوكلاء الذكيين المتخصصين في قنوات التواصل المتعددة
           </p>
+          <div className="mb-8">
+            <p className="text-lg mb-4">
+              <strong>"تقنيتنا تتواصل، واهتمامنا يرضي عملائكم."</strong>
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/signup" className="btn-primary text-lg px-8 py-4">
+            <Link to="/signup" className="btn bg-white text-purple-700 hover:bg-purple-50 text-lg px-8 py-4">
               بدء التشغيل الآن
             </Link>
-            <Link to="/contact" className="btn-outline text-lg px-8 py-4">
+            <Link to="/contact" className="btn bg-white/20 text-white border-2 border-white hover:bg-white hover:text-purple-700 text-lg px-8 py-4">
               التحدث مع خبير
             </Link>
+          </div>
+
+          <div className="mt-8 p-6 bg-white/10 rounded-lg">
+            <p className="text-blue-100 mb-2">نداء للعمل:</p>
+            <p className="text-lg">
+              "لنتحدث عن كيفية تحويل تحديات التواصل إلى فرص للنمو والتميز في خدمتكم للعملاء."
+            </p>
           </div>
         </div>
       </section>
@@ -350,6 +432,24 @@ const IntegrationExample: React.FC<IntegrationExampleProps> = ({ title, descript
           </div>
         ))}
       </div>
+    </div>
+  );
+};
+
+interface WhyChooseCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const WhyChooseCard: React.FC<WhyChooseCardProps> = ({ icon, title, description }) => {
+  return (
+    <div className="bg-white p-8 rounded-lg shadow-sm border border-secondary-200 text-center transition-all duration-300 hover:shadow-lg">
+      <div className="inline-block p-3 bg-blue-100 text-blue-600 rounded-full mb-4">
+        {icon}
+      </div>
+      <h3 className="text-lg font-bold mb-3">{title}</h3>
+      <p className="text-secondary-600 text-sm leading-relaxed">{description}</p>
     </div>
   );
 };

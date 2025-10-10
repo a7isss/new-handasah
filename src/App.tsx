@@ -12,8 +12,10 @@ import ClaimsManagementPage from './pages/services/ClaimsManagementPage';
 import HealthcareAnalyticsPage from './pages/services/HealthcareAnalyticsPage';
 import ClinicalDecisionSupportPage from './pages/services/ClinicalDecisionSupportPage';
 import AICommunicationServicesPage from './pages/services/AICommunicationServicesPage';
+import AIEngineeringServicesPage from './pages/services/AIEngineeringServicesPage';
 import IntegratedEngineeringSolutionsPage from './pages/services/IntegratedEngineeringSolutionsPage';
 import MedicalTechnologyServicesPage from './pages/services/MedicalTechnologyServicesPage';
+import MedicalOperationsPage from './pages/services/MedicalOperationsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/auth/LoginPage';
@@ -47,8 +49,10 @@ function App() {
       <Route path="/services/ensure/healthcare-analytics" element={<HealthcareAnalyticsPage />} />
       <Route path="/services/ensure/clinical-decision-support" element={<ClinicalDecisionSupportPage />} />
       <Route path="/services/ai-communication" element={<AICommunicationServicesPage />} />
+      <Route path="/services/ai-engineering" element={<AIEngineeringServicesPage />} />
       <Route path="/services/integrated-engineering" element={<IntegratedEngineeringSolutionsPage />} />
       <Route path="/services/medical-technology" element={<MedicalTechnologyServicesPage />} />
+      <Route path="/services/medical-operations" element={<MedicalOperationsPage />} />
 
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />

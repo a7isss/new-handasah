@@ -82,16 +82,16 @@ const HRServicesPage: React.FC = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-gray-600 to-gray-800 text-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {i18n.language === 'ar' ? t('services.ensure.landing.heroTitle') : 'Elevate Your Healthcare Revenue Cycle with Nathm Alhandasah\'s Ensure'}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-gray-100">
               {i18n.language === 'ar' ? t('services.ensure.landing.heroSubtitle') : 'Transform your healthcare operations with Nathm Alhandasah Company\'s comprehensive RCM solutions. Our advanced technology streamlines financial workflows, optimizes revenue capture, and ensures compliance while allowing your clinical teams to focus on patient care.'}
             </p>
-            <Link to="/contact" className="btn bg-white text-blue-700 hover:bg-blue-50">
+            <Link to="/contact" className="btn bg-white text-gray-700 hover:bg-gray-50">
               {i18n.language === 'ar' ? t('services.ensure.landing.cta.demo') : 'Schedule a Demo Consultation'}
             </Link>
           </div>
@@ -193,7 +193,7 @@ const HRServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-gray-50">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-6">{i18n.language === 'ar' ? 'هل أنت مستعد لتحويل دورة الإيرادات الصحية الخاصة بك؟' : 'Ready to Transform Your Healthcare Revenue Cycle?'}</h2>
           <p className="text-xl text-secondary-600 mb-8">
