@@ -67,12 +67,6 @@ const Header: React.FC = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1 rtl:space-x-reverse">
-            <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.home')}
-            </Link>
-            <Link to="/services/medical-operations" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/medical-operations') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.medicalOperations')}
-            </Link>
             <Link to="/services/hr-services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.ensureServices')}
             </Link>
@@ -84,6 +78,9 @@ const Header: React.FC = () => {
             </Link>
             <Link to="/contact" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/contact') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.contact')}
+            </Link>
+            <Link to="/training" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/training') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
+              التدريب
             </Link>
             
             <button 
@@ -120,12 +117,6 @@ const Header: React.FC = () => {
         {uiState.isMenuOpen && (
           <div className="md:hidden mt-4 pb-3 border-t border-secondary-200">
             <div className="pt-2 space-y-1">
-              <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.home')}
-              </Link>
-              <Link to="/services/medical-operations" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/medical-operations') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.medicalOperations')}
-              </Link>
               <Link to="/services/hr-services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.ensureServices')}
               </Link>
@@ -137,6 +128,9 @@ const Header: React.FC = () => {
               </Link>
               <Link to="/contact" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.contact')}
+              </Link>
+              <Link to="/training" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/training') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
+                التدريب
               </Link>
               
               <button 
