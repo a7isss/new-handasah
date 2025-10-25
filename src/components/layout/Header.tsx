@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         <div className="container-custom py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <div className="text-2xl font-bold text-primary-600">منصة إدارة المستندات</div>
+              <div className="text-2xl font-bold text-primary-600">{t('app.name')}</div>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
             <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               <img 
                 src="/logo & Icon.svg" 
-                alt="نظم الهندسة المبتكرة" 
+                alt={t('app.logoAlt')} 
                 className="h-10 w-10"
               />
               <span className="text-2xl font-bold text-secondary-800">
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
               {t('nav.contact')}
             </Link>
             <Link to="/training" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/training') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              التدريب
+              {t('nav.training')}
             </Link>
             
             <button 
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
                 {t('nav.contact')}
               </Link>
               <Link to="/training" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/training') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                التدريب
+                {t('nav.training')}
               </Link>
               
               <button 

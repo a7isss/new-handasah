@@ -1,15 +1,18 @@
 {
   "app": {
     "name": "Nathm Alhandasah Company",
-    "tagline": "AI + Human Expertise for HR, Marketing, and Customer Engagement"
+    "tagline": "AI + Human Expertise for HR, Marketing, and Customer Engagement",
+    "logoAlt": "Nathm Alhandasah Innovative Engineering"
   },
   "nav": {
     "home": "Home",
+    "medicalOperations": "Medical Operations",
     "services": "Services",
     "ensureServices": "Ensure Revenue Cycle Management",
     "aiCommunicationServices": "Smart Communication Services",
     "about": "About",
     "contact": "Contact",
+    "training": "Training",
     "login": "Login",
     "signup": "Sign Up",
     "dashboard": "Dashboard",
@@ -86,6 +89,49 @@
     }
   },
   "auth": {
+    "phoneVerification": {
+      "title": "Phone Verification",
+      "subtitle": "Enter your phone number to receive a verification code",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "05xxxxxxxx",
+      "sendCode": "Send Verification Code",
+      "verifyCode": "Verify Code",
+      "codeLabel": "Verification Code",
+      "codePlaceholder": "Enter the code sent",
+      "resendCode": "Resend Code",
+      "invalidPhone": "Invalid phone number",
+      "invalidCode": "Invalid verification code",
+      "codeSent": "Verification code sent",
+      "phoneVerified": "Phone number verified successfully",
+      "continue": "Continue"
+    },
+    "signup": {
+      "title": "Create New Account",
+      "subtitle": "Join the innovative engineering platform",
+      "fullNameLabel": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Enter your password again",
+      "createAccount": "Create Account",
+      "haveAccount": "Already have an account?",
+      "loginNow": "Login Now"
+    },
+    "login": {
+      "title": "Login",
+      "subtitle": "Welcome back",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "loginButton": "Login",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "signupNow": "Create New Account"
+    },
     "loginButton": "Login",
     "signupButton": "Sign Up",
     "loginNow": "Login Now",
@@ -160,6 +206,243 @@
     "somethingWentWrong": "Something went wrong",
     "pageNotFound": "Page Not Found",
     "failedToLoadGantt": "Failed to load Gantt chart"
+  },
+  "services": {
+    "ensure": {
+      "title": "Medical Revenue Cycle Management (RCM)",
+      "landing": {
+        "heroTitle": "Elevate Medical Revenue Cycle Efficiency with Ensure",
+        "heroSubtitle": "We transform healthcare operations through advanced solutions that streamline financial flows, enhance collections, and ensure compliance while allowing your clinical teams to focus on patient care.",
+        "heroBenefits": [
+          "Improved revenue and loss prevention",
+          "Automated compliance",
+          "Enhanced operational efficiency",
+          "Real-time operational insights"
+        ],
+        "overview": "Service Overview",
+        "overviewText": "Welcome to Ensure from Nathm Alhandasah - the revolutionary medical revenue cycle management platform designed to optimize healthcare financial operations. Our comprehensive suite of solutions covers every aspect of the RCM cycle, from accurate medical coding to claims management and advanced analytics.",
+        "whyChooseEnsure": "Why Choose Ensure from Nathm Alhandasah?",
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "questions": {
+            "whatIsRCM": {
+              "q": "What is Revenue Cycle Management?",
+              "a": "Revenue Cycle Management encompasses all administrative and clinical functions that contribute to capturing, managing, and collecting patient service revenue. Ensure automates and optimizes every stage of this complex process."
+            },
+            "howImproveRevenueCapture": {
+              "q": "How does Ensure improve revenue capture?",
+              "a": "Through automated claims auditing, AI-assisted coding, pre-authorization processing, and predictive analytics, Ensure helps healthcare organizations increase their reimbursements while reducing denials and administrative costs."
+            },
+            "suitableForPracticeSize": {
+              "q": "Is Ensure suitable for our practice size?",
+              "a": "Yes, our platform is designed to scale - from individual practitioners to multi-facility healthcare systems. Our modular approach allows implementation of only the solutions you need, with flexibility to grow with your practice."
+            },
+            "implementationTimeline": {
+              "q": "How long does implementation take?",
+              "a": "Most implementations are completed within 2-4 weeks, depending on your current systems and the modules you choose to deploy. Our team provides comprehensive training and ongoing support throughout the transition process."
+            },
+            "expectedResults": {
+              "q": "What results can we expect?",
+              "a": "Clients typically experience improvements in revenue capture rates, reduced claim denials, and significant time savings in administrative tasks within the first 90 days of implementation."
+            }
+          }
+        },
+        "cta": {
+          "demo": "Schedule a Consultative Demo",
+          "learnMore": "Learn More",
+          "consultation": "Schedule Consultation"
+        }
+      },
+      "medicalCoding": {
+        "heroTitle": "ICD-10 Coding Accuracy and Automation for Healthcare Excellence",
+        "heroSubtitle": "Empower your coding team with Ensure Coding Solution from Nathm Alhandasah - the intelligent solution that transforms complex medical coding operations into accurate, efficient workflows. Our AI-powered platform eliminates manual coding errors, accelerates reimbursement cycles while ensuring compliance with global healthcare standards.",
+        "features": {
+          "automatedCoding": "Automated ICD-10 Coding",
+          "intelligentMapping": "Intelligent Mapping",
+          "complianceMonitoring": "Compliance Monitoring",
+          "workflowIntegration": "Workflow Integration",
+          "realTimeValidation": "Real-time Validation",
+          "codeDatabase": "Comprehensive Code Database"
+        },
+        "benefits": {
+          "organizations": [
+            "Reduced Administrative Burden: Free coding specialists to focus on complex cases",
+            "Cost Savings: Reduce outsourcing and overtime costs",
+            "Revenue Improvement: Faster coding completion leads to faster claim submission"
+          ],
+          "specialists": [
+            "Increased Productivity: Handle larger coding volumes without sacrificing accuracy",
+            "Quality Assurance: AI-powered validation ensures coding consistency",
+            "Professional Development: Focus on complex specialized cases and career advancement"
+          ],
+          "patients": [
+            "Faster Processing: Streamlined coding leads to faster claim processing",
+            "Accuracy Assurance: Reduced coding errors prevent unnecessary delays",
+            "Cost Transparency: More accurate coding leads to better cost understanding"
+          ]
+        },
+        "technical": {
+          "standards": [
+            "ICD-10-AM (Australian Modification) - Currently available",
+            "ICD-10-CM (Clinical Modification) - Fully available",
+            "Additional standards support upon request",
+            "Automatic updates with latest coding changes"
+          ],
+          "coverage": [
+            "Saudi Arabia, United Arab Emirates, Qatar, Bahrain",
+            "Australia, New Zealand, Singapore",
+            "India, Philippines, Turkey, Ukraine",
+            "Regional compliance and translation support"
+          ],
+          "integration": [
+            "RESTful API architecture for seamless integration",
+            "Compatibility with major EHR systems (Epic, Cerner, Meditech)",
+            "Practice management system connectivity",
+            "HIPAA data encryption and security"
+          ]
+        },
+        "implementation": {
+          "title": "Implementation Process",
+          "description": "Comprehensive support throughout your coding transformation journey.",
+          "steps": [
+            "Current workflow assessment and integration requirements",
+            "Seamless connection to existing EHR systems",
+            "Comprehensive training programs with real-world testing scenarios"
+          ]
+        },
+        "cta": {
+          "assessment": "Request Free Implementation Assessment",
+          "demo": "Schedule Live Demo"
+        }
+      },
+      "clinicalDocumentation": {
+        "heroTitle": "Transform Raw Notes into Professional Documentation Ready for Audit",
+        "heroSubtitle": "Say goodbye to tedious documentation processes with Ensure Documentation Builder from Nathm Alhandasah. Our AI-powered platform instantly transforms clinical notes into standardized documentation that meets requirements and improves clinical workflows. Enjoy the efficiency of smart, searchable, audit-ready documentation.",
+        "features": {
+          "soapGeneration": "SOAP Note Generation",
+          "noteStructuring": "Smart Note Structuring",
+          "surveyReady": "Audit-Ready Output",
+          "narrativeAnalysis": "Clinical Narrative Analysis",
+          "contextUnderstanding": "Medical Context Understanding"
+        },
+        "benefits": {
+          "physicians": [
+            "70% time savings in documentation",
+            "Uniform and standardized documentation format",
+            "Focus on patient care instead of writing"
+          ],
+          "organizations": [
+            "Streamlined documentation processes",
+            "Reduced administrative costs and overtime",
+            "Improved medical record quality"
+          ],
+          "patients": [
+            "Clear and comprehensive medical records",
+            "Improved care continuity and coordination",
+            "Reduced medical errors and denials"
+          ]
+        },
+        "technical": {
+          "standards": ["SOAP format", "Structured medical records", "Compliance formats"],
+          "integration": ["EHR integration", "Practice system applications", "Documentation workflow automation"]
+        },
+        "useCases": {
+          "primaryCare": "Primary care settings",
+          "specialtyClinics": "Specialty clinics and hospitals"
+        }
+      },
+      "claimsManagement": {
+        "heroTitle": "Optimize Claims Processing and Increase Revenue Capture",
+        "heroSubtitle": "Streamline the medical revenue cycle with Ensure Claims Management platform from Nathm Alhandasah. Our comprehensive solutions cover every aspect of claims, from technical auditing to pre-authorization processing and regulatory compliance, reducing administrative burden and increasing approval rates while accelerating reimbursement cycles."
+      },
+      "healthcareAnalytics": {
+        "heroTitle": "Transform Healthcare Data into Strategic Intelligence",
+        "heroSubtitle": "Elevate decision-making in your healthcare organization with Ensure Analytics platform from Nathm Alhandasah. Our comprehensive analytical solutions transform complex data into actionable insights, enabling strategic decisions, revenue optimization, and operational excellence."
+      },
+      "clinicalDecisionSupport": {
+        "heroTitle": "AI-Enhanced Clinical Excellence for Modern Healthcare",
+        "heroSubtitle": "Empower your clinical teams with Ensure Clinical Decision Support System from Nathm Alhandasah. Our AI-powered platform combines evidence-based medicine with real-time clinical insights to enhance diagnostic accuracy, reduce errors, and streamline clinical workflows. Enjoy precision medicine that adapts to individual patient needs while maintaining global healthcare standards."
+      }
+    },
+    "hr": {
+      "title": "Medical Revenue Cycle Management (RCM) Services",
+      "subtitle": "Smart Revenue and Compliance Solutions",
+      "description": "AI-powered platforms for medical claims management, documentation, and analytics",
+      "targetProfiles": {
+        "title": "Target Specialties",
+        "medicalCoding": "Medical Coding Specialists",
+        "clinicalDocumentation": "Clinical Documentation Specialists",
+        "claimsManagement": "Revenue Cycle Managers",
+        "healthcareAnalytics": "Healthcare Analytics Professionals"
+      },
+      "process": {
+        "title": "How Our Services Work",
+        "step1": "Automated Analysis",
+        "step1Desc": "AI analyzes medical claims and documentation",
+        "step2": "Verification and Compliance",
+        "step2Desc": "Compliance and accuracy checking before submission",
+        "step3": "Continuous Improvement",
+        "step3Desc": "Performance analysis and process optimization"
+      }
+    },
+    "whatsapp": {
+      "title": "Integrated WhatsApp API Services",
+      "subtitle": "Smart Integration with ERP Systems",
+      "description": "Smart integration with ERP systems for automated marketing and business notifications",
+      "categories": {
+        "marketing": {
+          "title": "Marketing Services",
+          "description": "Smart and automated marketing campaigns"
+        },
+        "business": {
+          "title": "Business Services",
+          "description": "Automated business notifications from ERP systems"
+        }
+      }
+    },
+    "calls": {
+      "title": "Automated Call Services",
+      "subtitle": "Smart Business Agents",
+      "description": "Smart agents for sales, reception, and satisfaction surveys",
+      "agents": {
+        "sales": {
+          "title": "Smart Sales Agent",
+          "description": "Outbound calls for lead generation and customer qualification"
+        },
+        "receptionist": {
+          "title": "Smart Receptionist",
+          "description": "Incoming call reception, appointment booking, and call routing"
+        },
+        "healthcare": {
+          "title": "Medical Satisfaction Survey Bot",
+          "description": "Automatic patient satisfaction surveys after visits"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": "Our Mission: Integrate AI automation with professional expertise to deliver business value",
+    "vision": "Our Vision: To be the leading provider of AI + Professional services in the MENA region"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help you",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us"
   },
   "stripe": {
     "checkout": "Checkout",
