@@ -66,7 +66,7 @@ const Header: React.FC = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1 rtl:space-x-reverse">
+          <nav className="hidden md:flex items-center justify-center space-x-4">
             <Link to="/services/hr-services" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.ensureServices')}
             </Link>
@@ -84,11 +84,11 @@ const Header: React.FC = () => {
               onClick={toggleLanguage} 
               className="px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-600 flex items-center"
             >
-              <Globe size={18} className="ml-1 rtl:mr-1 rtl:ml-0" />
-              <span className="mr-1 rtl:ml-1 rtl:mr-0">{t('nav.language')}</span>
+              <Globe size={18} className="ml-1" />
+              <span className="ml-1">{t('nav.language')}</span>
             </button>
             
-            <div className="flex items-center space-x-2 rtl:space-x-reverse ml-3 rtl:mr-3 rtl:ml-0">
+            <div className="flex items-center space-x-2 ml-3">
               <Link to="/login" className="btn-outline">
                 {t('nav.login')}
               </Link>
@@ -113,7 +113,7 @@ const Header: React.FC = () => {
         {/* Mobile Navigation */}
         {uiState.isMenuOpen && (
           <div className="md:hidden mt-4 pb-3 border-t border-secondary-200">
-            <div className="pt-2 space-y-1">
+            <div className="pt-2 space-y-1 text-center">
               <Link to="/services/hr-services" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/hr-services') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.ensureServices')}
               </Link>
@@ -129,10 +129,10 @@ const Header: React.FC = () => {
               
               <button 
                 onClick={toggleLanguage} 
-                className="w-full text-left flex items-center px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-100"
+                className="w-full flex items-center justify-center px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-100"
               >
-                <Globe size={18} className="ml-1 rtl:mr-1 rtl:ml-0" />
-                <span className="mr-1 rtl:ml-1 rtl:mr-0">{t('nav.language')}</span>
+                <Globe size={18} className="ml-1" />
+                <span className="ml-1">{t('nav.language')}</span>
               </button>
               
               <div className="mt-3 space-y-2">
