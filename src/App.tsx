@@ -18,7 +18,6 @@ import MedicalTechnologyServicesPage from './pages/services/MedicalTechnologySer
 import MedicalOperationsPage from './pages/services/MedicalOperationsPage';
 import MarketingServicesPage from './pages/services/MarketingServicesPage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
 import TrainingPage from './pages/TrainingPage';
 import LoginPage from './pages/auth/LoginPage';
 import SignupPage from './pages/auth/SignupPage';
@@ -58,7 +57,6 @@ function App() {
       <Route path="/services/marketing" element={<MarketingServicesPage />} />
 
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/contact" element={<ContactPage />} />
       <Route path="/training" element={<TrainingPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/verify-phone" element={<PhoneVerificationPage />} />

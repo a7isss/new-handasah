@@ -73,14 +73,11 @@ const Header: React.FC = () => {
             <Link to="/services/ai-communication" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/services/ai-communication') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.aiCommunicationServices')}
             </Link>
-            <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.about')}
-            </Link>
-            <Link to="/contact" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/contact') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
-              {t('nav.contact')}
-            </Link>
             <Link to="/training" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/training') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
               {t('nav.training')}
+            </Link>
+            <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:text-gray-800'}`}>
+              {t('nav.about')}
             </Link>
             
             <button 
@@ -123,14 +120,11 @@ const Header: React.FC = () => {
               <Link to="/services/ai-communication" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/services/ai-communication') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.aiCommunicationServices')}
               </Link>
-              <Link to="/about" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.about')}
-              </Link>
-              <Link to="/contact" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
-                {t('nav.contact')}
-              </Link>
               <Link to="/training" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/training') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
                 {t('nav.training')}
+              </Link>
+              <Link to="/about" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-black' : 'text-black hover:bg-gray-100'}`}>
+                {t('nav.about')}
               </Link>
               
               <button 
