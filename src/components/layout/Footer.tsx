@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">{t('app.name')}</h3>
+            <h3 className="text-xl font-bold text-white mb-4">{t('app.fullName')}</h3>
             <p className="text-secondary-300 mb-4">{t('app.tagline')}</p>
             <div className="flex space-x-4 rtl:space-x-reverse">
               <a href="#" className="text-secondary-300 hover:text-white transition-colors">

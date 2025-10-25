@@ -1,6 +1,7 @@
 {
   "app": {
-    "name": "Nathm Alhandasah Company",
+    "name": "Nathm Company",
+    "fullName": "Nathm Alhandasah Company",
     "tagline": "AI + Human Expertise for HR, Marketing, and Customer Engagement",
     "logoAlt": "Nathm Alhandasah Innovative Engineering"
   },
@@ -220,8 +221,8 @@
           "Real-time operational insights"
         ],
         "overview": "Service Overview",
-        "overviewText": "Welcome to Ensure from Nathm Alhandasah - the revolutionary medical revenue cycle management platform designed to optimize healthcare financial operations. Our comprehensive suite of solutions covers every aspect of the RCM cycle, from accurate medical coding to claims management and advanced analytics.",
-        "whyChooseEnsure": "Why Choose Ensure from Nathm Alhandasah?",
+        "overviewText": "Welcome to Ensure from Nathm Company - the revolutionary medical revenue cycle management platform designed to optimize healthcare financial operations. Our comprehensive suite of solutions covers every aspect of the RCM cycle, from accurate medical coding to claims management and advanced analytics.",
+        "whyChooseEnsure": "Why Choose Ensure from Nathm Company?",
         "faq": {
           "title": "Frequently Asked Questions",
           "questions": {
