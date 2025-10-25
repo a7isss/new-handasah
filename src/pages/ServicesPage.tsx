@@ -41,20 +41,6 @@ const ServicesPage: React.FC = () => {
               badge="الأكثر طلباً"
             />
             
-            {/* Medical Operations */}
-            <MainServiceCard
-              icon={<MessageSquare size={48} />}
-              title="التشغيل الطبي"
-              description="نجعل تشغيل المرافق الصحية أكثر كفاءة من خلال خدماتنا الإدارية المتخصصة."
-              features={[
-                'تشغيل المستشفيات والعيادات',
-                'جدولة وإدارة الطاقم الطبي',
-                'صيانة الأجهزة الطبية والامتثال للمعايير',
-                'برامج ضمان الجودة'
-              ]}
-              link="/services/medical-operations"
-              color="bg-green-500"
-            />
             
             {/* Revenue Cycle Management */}
             <MainServiceCard

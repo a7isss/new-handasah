@@ -15,7 +15,6 @@ import AICommunicationServicesPage from './pages/services/AICommunicationService
 import AIEngineeringServicesPage from './pages/services/AIEngineeringServicesPage';
 import IntegratedEngineeringSolutionsPage from './pages/services/IntegratedEngineeringSolutionsPage';
 import MedicalTechnologyServicesPage from './pages/services/MedicalTechnologyServicesPage';
-import MedicalOperationsPage from './pages/services/MedicalOperationsPage';
 import MarketingServicesPage from './pages/services/MarketingServicesPage';
 import AboutPage from './pages/AboutPage';
 import TrainingPage from './pages/TrainingPage';
@@ -53,7 +52,6 @@ function App() {
       <Route path="/services/ai-engineering" element={<AIEngineeringServicesPage />} />
       <Route path="/services/integrated-engineering" element={<IntegratedEngineeringSolutionsPage />} />
       <Route path="/services/medical-technology" element={<MedicalTechnologyServicesPage />} />
-      <Route path="/services/medical-operations" element={<MedicalOperationsPage />} />
       <Route path="/services/marketing" element={<MarketingServicesPage />} />
 
       <Route path="/about" element={<AboutPage />} />

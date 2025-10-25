@@ -54,14 +54,7 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <ServiceCard
-              icon={<Users size={32} />}
-              title="التشغيل الطبي"
-              description="ريادة الأداء الطبي واستثنائية تجربة المريض"
-              link="/services/medical-operations"
-              color="bg-accent-600"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               icon={<MessageSquare size={32} />}
               title="قنوات التواصل الموحدة"
