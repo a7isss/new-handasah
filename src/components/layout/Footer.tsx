@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">روابط سريعة</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-secondary-300 hover:text-white transition-colors">
@@ -45,42 +45,37 @@ const Footer: React.FC = () => {
                   {t('nav.about')}
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="text-secondary-300 hover:text-white transition-colors">
-                  {t('nav.contact')}
-                </Link>
-              </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">خدماتنا</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.ourServices')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/services/hr" className="text-secondary-300 hover:text-white transition-colors">
-                  خدمات الموارد البشرية
+                  {t('services.hrServices')}
                 </Link>
               </li>
               <li>
                 <Link to="/services/communication-channels" className="text-secondary-300 hover:text-white transition-colors">
-                  قنوات التواصل الموحدة
+                  {t('services.unifiedCommunication')}
                 </Link>
               </li>
               <li>
                 <Link to="/services/integrated-engineering" className="text-secondary-300 hover:text-white transition-colors">
-                  الحلول الهندسية المتكاملة
+                  {t('services.integratedEngineering')}
                 </Link>
               </li>
               <li>
                 <Link to="/services/medical-technology" className="text-secondary-300 hover:text-white transition-colors">
-                  خدمات التقنية الطبية
+                  {t('services.medicalTechnology')}
                 </Link>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">اتصل بنا</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.contactUs')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mt-1 ml-2 rtl:mr-0 text-secondary-300" />
@@ -103,7 +98,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-secondary-700 text-center text-secondary-400">
-          <p>&copy; {currentYear} {t('app.name')}. كل الحقوق محفوظة.</p>
+          <p>&copy; {currentYear} {t('app.name')}. {t('footer.allRightsReserved')}</p>
         </div>
       </div>
     </footer>

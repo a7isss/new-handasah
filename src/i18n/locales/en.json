@@ -424,7 +424,23 @@
   "about": {
     "title": "About Us",
     "mission": "Our Mission: Integrate AI automation with professional expertise to deliver business value",
-    "vision": "Our Vision: To be the leading provider of AI + Professional services in the MENA region"
+    "vision": "Our Vision: To be the leading provider of AI + Professional services in the MENA region",
+    "subtitle": "A specialized platform for AI services supported by human expertise",
+    "missionText": "We aim to empower companies to leverage the power of AI while maintaining specialized human touch, by providing integrated solutions that combine advanced technology with professional expertise.",
+    "visionText": "To be the first partner for companies in the Middle East and North Africa region in their digital transformation journey by integrating AI with specialized human expertise.",
+    "features": {
+      "advancedTech": "Advanced Technology",
+      "advancedTechDesc": "Using the latest AI technologies to achieve the best results",
+      "humanExpertise": "Human Expertise",
+      "humanExpertiseDesc": "A team of specialists to ensure service quality and cultural appropriateness",
+      "highEfficiency": "High Efficiency",
+      "highEfficiencyDesc": "Improving processes and saving time while maintaining the highest quality standards"
+    },
+    "benefits": {
+      "customSolutions": "Smart solutions customized for each sector",
+      "technicalSupport": "Specialized technical support 24/7",
+      "continuousUpdates": "Continuous updates to keep up with technological developments"
+    }
   },
   "contact": {
     "title": "Contact Us",
@@ -435,7 +451,21 @@
       "phone": "Phone Number",
       "message": "Message",
       "send": "Send Message"
-    }
+    },
+    "directContact": "Contact Us Directly",
+    "whatsappConsultation": "Talk to us directly on WhatsApp for a free consultation",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "businessHours": "Business Hours",
+    "sundayThursday": "Sunday - Thursday",
+    "fridaySaturday": "Friday - Saturday",
+    "closed": "Closed",
+    "talkDirectly": "Talk to Us Directly",
+    "clickWhatsapp": "Click the link below to contact us directly on WhatsApp",
+    "connectWhatsapp": "Contact Us on WhatsApp",
+    "responseTime": "We will respond to your inquiry as soon as possible"
   },
   "common": {
     "loading": "Loading...",
@@ -444,6 +474,18 @@
     "learnMore": "Learn More",
     "getStarted": "Get Started",
     "contactUs": "Contact Us"
+  },
+  "services": {
+    "hrServices": "HR Services",
+    "unifiedCommunication": "Unified Communication Channels",
+    "integratedEngineering": "Integrated Engineering Solutions",
+    "medicalTechnology": "Medical Technology Services"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us",
+    "allRightsReserved": "All rights reserved"
   },
   "stripe": {
     "checkout": "Checkout",
