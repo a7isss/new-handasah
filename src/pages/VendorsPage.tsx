@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import {
   ArrowRight,
   ShieldCheck,
@@ -86,7 +87,13 @@ const categories: VendorCategory[] = [
 
 const VendorsPage: React.FC = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Approved Vendor List | Nathm — Medical Sector Suppliers in KSA"
+        description="Nathm's approved vendor list — a curated, screened directory of medical equipment, construction, health-tech, consumables, staffing, and maintenance suppliers for healthcare facilities in Saudi Arabia."
+        path="/vendors"
+      />
+      <Layout>
       {/* Hero */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24">
@@ -203,6 +210,7 @@ const VendorsPage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

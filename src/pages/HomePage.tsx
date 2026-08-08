@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import {
   ArrowRight,
   ShieldCheck,
@@ -16,13 +17,43 @@ import {
 
 const HomePage: React.FC = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Nathm | Medical Sector Consulting in Saudi Arabia"
+        description="Nathm is a medical-sector consulting group in Riyadh, KSA — advising corporations, hospital groups, and investors across market entry, due diligence, operations, commercial growth, and healthcare talent."
+        path="/"
+      />
+      <Layout>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-navy-950 text-white">
         <div className="pointer-events-none absolute -right-40 top-0 h-[480px] w-[640px] rounded-full bg-accent-600/15 blur-[130px]" />
         <div className="pointer-events-none absolute -left-32 bottom-0 h-[360px] w-[480px] rounded-full bg-accent-500/10 blur-[120px]" />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-24 sm:px-8 md:py-32">
+        <div className="pointer-events-none absolute inset-0 z-0 opacity-20">
+          <svg
+            className="h-full w-full"
+            viewBox="0 0 1440 400"
+            preserveAspectRatio="xMidYMid meet"
+            fill="none"
+          >
+            <path
+              id="ecg-pulse-home"
+              d="M -30 200 L 40 200 C 44 200 44 194 50 194 C 56 194 56 200 62 200 L 76 200 L 80 208 L 84 122 L 88 248 L 92 200 C 96 200 98 178 108 178 C 118 178 120 200 126 200 L 200 200 L 240 200 C 244 200 244 194 250 194 C 256 194 256 200 262 200 L 276 200 L 280 208 L 284 122 L 288 248 L 292 200 C 296 200 298 178 308 178 C 318 178 320 200 326 200 L 400 200 L 440 200 C 444 200 444 194 450 194 C 456 194 456 200 462 200 L 476 200 L 480 208 L 484 122 L 488 248 L 492 200 C 496 200 498 178 508 178 C 518 178 520 200 526 200 L 600 200 L 640 200 C 644 200 644 194 650 194 C 656 194 656 200 662 200 L 676 200 L 680 208 L 684 122 L 688 248 L 692 200 C 696 200 698 178 708 178 C 718 178 720 200 726 200 L 800 200 L 840 200 C 844 200 844 194 850 194 C 856 194 856 200 862 200 L 876 200 L 880 208 L 884 122 L 888 248 L 892 200 C 896 200 898 178 908 178 C 918 178 920 200 926 200 L 1000 200 L 1040 200 C 1044 200 1044 194 1050 194 C 1056 194 1056 200 1062 200 L 1076 200 L 1080 208 L 1084 122 L 1088 248 L 1092 200 C 1096 200 1098 178 1108 178 C 1118 178 1120 200 1126 200 L 1200 200 L 1240 200 C 1244 200 1244 194 1250 194 C 1256 194 1256 200 1262 200 L 1276 200 L 1280 208 L 1284 122 L 1288 248 L 1292 200 C 1296 200 1298 178 1308 178 C 1318 178 1320 200 1326 200 L 1400 200 L 1440 200"
+              stroke="#34d399"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="ecg-pulse-line"
+            />
+            <circle r="4.5" fill="#6ee7b7">
+              <animateMotion dur="16s" repeatCount="indefinite" rotate="auto">
+                <mpath xlinkHref="#ecg-pulse-home" />
+              </animateMotion>
+            </circle>
+          </svg>
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-5 py-24 sm:px-8 md:py-32">
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.28em] text-accent-400">
               Medical Sector Advisory
@@ -66,6 +97,44 @@ const HomePage: React.FC = () => {
                 </span>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advisory presence */}
+      <section className="border-b border-secondary-200 bg-white">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 py-16 sm:px-8 md:py-20 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl">
+            <img
+              src="/stock%20image%20landing.jpg"
+              alt="Nathm advisors reviewing a healthcare facility with a client in the field in Riyadh"
+              loading="lazy"
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
+          <div>
+            <p className="eyebrow">Advisors in the Field</p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              A local team standing next to your decision
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-secondary-600">
+              Every engagement is led by people who have walked the floors of Saudi
+              hospitals and clinics — people who understand how care is licensed, staffed,
+              supplied, and paid for in the Kingdom. We bring that reality into the
+              boardroom, before capital is committed.
+            </p>
+            <ul className="mt-8 space-y-3">
+              {[
+                'On-the-ground diligence across the Kingdom',
+                'Direct access to senior advisors — no hand-offs',
+                'One partner from deal evaluation to Day 1',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent-600" />
+                  <span className="font-medium text-navy-900">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -249,6 +318,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

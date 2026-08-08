@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import Seo from '../components/seo/Seo';
 import {
   Stethoscope,
   Ruler,
@@ -109,12 +110,14 @@ const vendorCategories: VendorCategory[] = [
 ];
 
 const CompanyProfilePage: React.FC = () => {
-  useEffect(() => {
-    document.title = 'Company Profile | Nathm — Medical Sector Consulting Group, KSA';
-  }, []);
-
   return (
-    <div className="min-h-screen bg-white text-secondary-900">
+    <>
+      <Seo
+        title="Company Profile | Nathm — Medical Sector Consulting Group, KSA"
+        description="The complete Nathm company profile — one reference for every service: healthcare asset acquisition, due diligence, commercial growth, healthcare HR, an approved vendor program, and the group's engineering heritage."
+        path="/company-profile"
+      />
+      <div className="min-h-screen bg-white text-secondary-900">
       <style>
         {`@media print {
   .profile-dark { background-color: #ffffff !important; }
@@ -452,6 +455,7 @@ const CompanyProfilePage: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

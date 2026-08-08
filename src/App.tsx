@@ -5,6 +5,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import HRServicesPage from './pages/services/HRServicesPage';
+import AcquisitionGuidePage from './pages/services/AcquisitionGuidePage';
 import VendorsPage from './pages/VendorsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -22,6 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/services/acquisition-guide" element={<AcquisitionGuidePage />} />
       <Route path="/services/hr" element={<HRServicesPage />} />
       <Route path="/vendors" element={<VendorsPage />} />
       <Route path="/about" element={<AboutPage />} />

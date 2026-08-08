@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import {
   Stethoscope,
   Ruler,
@@ -11,7 +12,13 @@ import {
 
 const AboutPage: React.FC = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="About Nathm | Medical Sector Consulting Group — Riyadh, KSA"
+        description="Nathm is a medical-sector consulting group in Riyadh, Kingdom of Saudi Arabia — flagship medical consulting, healthcare HR, an approved vendor program, and a legacy engineering division."
+        path="/about"
+      />
+      <Layout>
       {/* Hero */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24">
@@ -182,6 +189,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

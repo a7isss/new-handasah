@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../components/layout/Layout';
-import { MapPin, Phone, Mail, Send, Clock } from 'lucide-react';
+import Seo from '../components/seo/Seo';
+import { MapPin, Phone, Mail, Send, Clock, MessageCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const ContactPage: React.FC = () => {
@@ -27,7 +28,13 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Contact Nathm | Medical Sector Consulting — Riyadh, KSA"
+        description="Contact Nathm for a private briefing — Office 10, 53165 Olaya Street, Riyadh, Kingdom of Saudi Arabia. Email gm@hndasah.com or call 924 445 440."
+        path="/contact"
+      />
+      <Layout>
       {/* Hero */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24">
@@ -71,6 +78,12 @@ const ContactPage: React.FC = () => {
                   title="Email"
                   lines={['gm@hndasah.com']}
                   href="mailto:gm@hndasah.com"
+                />
+                <ContactRow
+                  icon={<MessageCircle />}
+                  title="WhatsApp"
+                  lines={['+966 536 610 666']}
+                  href="https://wa.me/966536610666"
                 />
                 <ContactRow
                   icon={<Clock />}
@@ -197,6 +210,7 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 
@@ -219,6 +233,7 @@ const ContactRow: React.FC<ContactRowProps> = ({ icon, title, lines, href }) => 
           <a
             key={line}
             href={href}
+            {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
             className="mt-1 block text-secondary-600 transition-colors hover:text-accent-700"
           >
             {line}

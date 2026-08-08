@@ -36,6 +36,11 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/services/acquisition-guide" className="text-secondary-400 transition-colors hover:text-white">
+                  Acquisition Guide
+                </Link>
+              </li>
+              <li>
                 <Link to="/services/hr" className="text-secondary-400 transition-colors hover:text-white">
                   Healthcare HR Services
                 </Link>

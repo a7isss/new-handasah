@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../../components/layout/Layout';
+import Seo from '../../components/seo/Seo';
 import {
   ArrowRight,
   Search,
@@ -16,7 +17,13 @@ import {
 
 const HRServicesPage: React.FC = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Healthcare HR & Executive Search | Nathm — KSA"
+        description="Clinical leadership placement, C-suite and executive search, MOH / SCFHS licensing, and Saudization compliance for healthcare organizations in the Kingdom of Saudi Arabia."
+        path="/services/hr"
+      />
+      <Layout>
       {/* Hero */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24">
@@ -194,6 +201,7 @@ const HRServicesPage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

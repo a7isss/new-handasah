@@ -52,3 +52,16 @@
     @apply py-20 md:py-28;
   }
 }
+
+@keyframes ecg-pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.ecg-pulse-line {
+  animation: ecg-pulse 3s ease-in-out infinite;
+}

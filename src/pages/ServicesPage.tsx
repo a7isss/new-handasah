@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import {
   ArrowRight,
   SearchCheck,
@@ -10,6 +11,7 @@ import {
   FileCheck2,
   CheckCircle2,
   Briefcase,
+  Compass,
 } from 'lucide-react';
 
 interface Pillar {
@@ -24,6 +26,18 @@ interface Pillar {
 const pillars: Pillar[] = [
   {
     letter: 'A',
+    icon: <Compass />,
+    title: 'Acquiring Healthcare Assets in KSA',
+    focus: "A complete buyer's roadmap for acquiring a hospital or clinic in Saudi Arabia — from pre-deal diligence through licensing, transition, staffing, and Day-1 operations.",
+    capabilities: [
+      { title: 'Pre-Deal Operational & Technical Diligence', detail: 'Surface the real clinical, regulatory, and CAPEX risks before you commit capital.' },
+      { title: 'Licensing & Regulatory Path', detail: 'MOH, CCHI, and SCFHS requirements mapped from day one.' },
+      { title: 'Transition, Staffing & Vendors', detail: 'Day-1 readiness, Saudization planning, and approved supply setup.' },
+    ],
+    link: '/services/acquisition-guide',
+  },
+  {
+    letter: 'B',
     icon: <SearchCheck />,
     title: 'Investment & Market Entry Advisory',
     focus:
@@ -35,7 +49,7 @@ const pillars: Pillar[] = [
     ],
   },
   {
-    letter: 'B',
+    letter: 'C',
     icon: <ShieldCheck />,
     title: 'Operational & Regulatory Due Diligence',
     focus:
@@ -47,7 +61,7 @@ const pillars: Pillar[] = [
     ],
   },
   {
-    letter: 'C',
+    letter: 'D',
     icon: <LineChart />,
     title: 'Commercial Growth & Expansion',
     focus:
@@ -59,7 +73,7 @@ const pillars: Pillar[] = [
     ],
   },
   {
-    letter: 'D',
+    letter: 'E',
     icon: <Users />,
     title: 'Healthcare HR & Executive Search',
     focus:
@@ -72,7 +86,7 @@ const pillars: Pillar[] = [
     link: '/services/hr',
   },
   {
-    letter: 'E',
+    letter: 'F',
     icon: <FileCheck2 />,
     title: 'Approved Vendor Program',
     focus:
@@ -88,7 +102,13 @@ const pillars: Pillar[] = [
 
 const ServicesPage: React.FC = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Services | Nathm — Medical Sector Consulting in KSA"
+        description="Nathm's consulting services for the Saudi medical sector: healthcare asset acquisition guide, investment & market entry, operational and regulatory due diligence, commercial growth, healthcare HR, and an approved vendor program."
+        path="/services"
+      />
+      <Layout>
       {/* Hero */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24">
@@ -100,7 +120,7 @@ const ServicesPage: React.FC = () => {
               Advisory for every stage of the medical asset lifecycle
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-secondary-300">
-              Five integrated pillars — from pre-deal diligence to post-acquisition growth,
+              Six integrated pillars — from pre-deal diligence to post-acquisition growth,
               talent, and supplier assurance — give large corporations and investors one
               partner across the entire journey.
             </p>
@@ -220,6 +240,7 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

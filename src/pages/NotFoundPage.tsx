@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import { ArrowRight } from 'lucide-react';
 
 const NotFoundPage: React.FC = () => {
   return (
-    <Layout>
+    <>
+      <Seo
+        title="Page Not Found | Nathm"
+        description="The page you are looking for does not exist or has been removed."
+        path="/404"
+        noIndex
+      />
+      <Layout>
       <section className="flex min-h-[60vh] items-center bg-white">
         <div className="mx-auto max-w-2xl px-5 py-20 text-center sm:px-8">
           <p className="text-7xl font-bold text-accent-600">404</p>
@@ -28,6 +36,7 @@ const NotFoundPage: React.FC = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 
