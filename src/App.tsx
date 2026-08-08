@@ -8,6 +8,7 @@ import HRServicesPage from './pages/services/HRServicesPage';
 import VendorsPage from './pages/VendorsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import CompanyProfilePage from './pages/CompanyProfilePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path="/vendors" element={<VendorsPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/company-profile" element={<CompanyProfilePage />} />
 
       {/* 404 Route */}
       <Route path="*" element={<NotFoundPage />} />

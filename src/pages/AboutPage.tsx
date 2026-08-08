@@ -131,6 +131,40 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Leadership */}
+      <section className="section-pad bg-white">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="max-w-3xl">
+            <p className="eyebrow">Leadership</p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              The team behind the group
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-secondary-600">
+              A senior leadership team fluent in the regulatory, clinical, and commercial
+              realities of the Saudi healthcare market.
+            </p>
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <LeaderCard
+              photo="/founder%20and%20ceo%20ahmad%20younis.webp"
+              name="Ahmad Younis"
+              role="Founder &amp; CEO"
+            />
+            <LeaderCard
+              photo="/CFO%20Dr.Hussam%20Fakhri%20Alhajjar.webp"
+              name="Dr. Hussam Fakhri Alhajjar"
+              role="Chief Financial Officer"
+            />
+            <LeaderCard
+              photo="/cto%20Eng%20Fawzi%20Mudawwar%20.webp"
+              name="Eng. Fawzi Mudawwar"
+              role="Chief Technology Officer"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Mission */}
       <section className="bg-navy-950 py-20 text-white md:py-24">
         <div className="mx-auto max-w-4xl px-5 text-center sm:px-8">
@@ -150,5 +184,17 @@ const AboutPage: React.FC = () => {
     </Layout>
   );
 };
+
+const LeaderCard: React.FC<{ photo: string; name: string; role: string }> = ({ photo, name, role }) => (
+  <div className="overflow-hidden rounded-2xl border border-secondary-200 bg-white">
+    <div className="aspect-[4/5] w-full overflow-hidden bg-secondary-100">
+      <img src={photo} alt={name} className="h-full w-full object-cover" />
+    </div>
+    <div className="p-6">
+      <h3 className="text-lg font-bold text-navy-900">{name}</h3>
+      <p className="mt-1 text-sm font-semibold text-accent-700">{role}</p>
+    </div>
+  </div>
+);
 
 export default AboutPage;

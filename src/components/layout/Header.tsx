@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Stethoscope, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 const NAV_LINKS = [
   { path: '/', label: 'Home' },
@@ -21,9 +21,7 @@ const Header: React.FC = () => {
       <div className="container-custom mx-auto max-w-7xl px-5 sm:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-600">
-              <Stethoscope className="h-5 w-5 text-white" />
-            </span>
+            <img src="/logo.svg" alt="Nathm logo" className="h-9 w-auto" />
             <span className="text-lg font-extrabold tracking-tight text-navy-900">
               Nathm
             </span>

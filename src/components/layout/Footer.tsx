@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Stethoscope, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,9 +11,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link to="/" className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-600">
-                <Stethoscope className="h-5 w-5 text-white" />
-              </span>
+              <img src="/logo.svg" alt="Nathm logo" className="h-9 w-auto invert" />
               <span className="text-lg font-extrabold tracking-tight text-white">Nathm</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-secondary-400">
