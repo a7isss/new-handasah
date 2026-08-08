@@ -1,156 +1,195 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout/Layout';
-import { MapPin, Phone, Mail, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Send, Clock } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const ContactPage: React.FC = () => {
-  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
+    organization: '',
     email: '',
     phone: '',
-    message: ''
+    sector: 'Hospital / Clinical Facility',
+    message: '',
   });
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    toast.success('تم إرسال رسالتك بنجاح. سنتواصل معك قريباً');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    toast.success('Your inquiry has been received. Our team will contact you shortly.');
+    setFormData({
+      name: '',
+      organization: '',
+      email: '',
+      phone: '',
+      sector: 'Hospital / Clinical Facility',
+      message: '',
+    });
   };
-  
+
   return (
     <Layout>
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4">{t('contact.title')}</h1>
-            <p className="text-xl text-secondary-600">
-              {t('contact.subtitle')}
+      {/* Hero */}
+      <section className="bg-navy-950 text-white">
+        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-accent-400">
+              Contact &amp; Engagement
+            </p>
+            <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Start with a private briefing
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-secondary-300">
+              Whether you are evaluating a medical asset, entering the market, building a
+              leadership team, or procuring through our approved vendor list — tell us
+              where you are and where you need to go.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        </div>
+      </section>
+
+      <section className="section-pad bg-white">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
+            {/* Contact info */}
             <div>
-              <h2 className="text-2xl font-bold mb-6">معلومات التواصل</h2>
-              
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <MapPin className="text-primary-600 ml-4 mt-1" size={24} />
-                  <div>
-                    <h3 className="font-semibold mb-1">العنوان</h3>
-                    <p className="text-secondary-600">
-                      الرياض، المملكة العربية السعودية
-                      <br />
-                      شارع الملك فهد، برج المملكة
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <Phone className="text-primary-600 ml-4 mt-1" size={24} />
-                  <div>
-                    <h3 className="font-semibold mb-1">الهاتف</h3>
-                    <p className="text-secondary-600">
-                      +966 11 234 5678
-                      <br />
-                      +966 11 234 5679
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <Mail className="text-primary-600 ml-4 mt-1" size={24} />
-                  <div>
-                    <h3 className="font-semibold mb-1">البريد الإلكتروني</h3>
-                    <p className="text-secondary-600">
-                      info@innovative-engineering.com
-                      <br />
-                      support@innovative-engineering.com
-                    </p>
-                  </div>
-                </div>
+              <h2 className="text-2xl font-bold tracking-tight">Engagement details</h2>
+
+              <div className="mt-8 space-y-6">
+                <ContactRow
+                  icon={<MapPin />}
+                  title="Address"
+                  lines={['Office 10, 53165 Olaya Street', 'Riyadh, Kingdom of Saudi Arabia']}
+                />
+                <ContactRow
+                  icon={<Phone />}
+                  title="Phone"
+                  lines={['+966 924 445 440']}
+                  href="tel:+966924445440"
+                />
+                <ContactRow
+                  icon={<Mail />}
+                  title="Email"
+                  lines={['gm@hndasah.com']}
+                  href="mailto:gm@hndasah.com"
+                />
+                <ContactRow
+                  icon={<Clock />}
+                  title="Business hours"
+                  lines={['Sunday – Thursday: 9:00 AM – 5:00 PM', 'Friday – Saturday: Closed']}
+                />
               </div>
-              
-              <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-6">ساعات العمل</h2>
-                <div className="space-y-2">
-                  <p className="flex justify-between">
-                    <span className="font-semibold">الأحد - الخميس</span>
-                    <span className="text-secondary-600">9:00 ص - 5:00 م</span>
-                  </p>
-                  <p className="flex justify-between">
-                    <span className="font-semibold">الجمعة - السبت</span>
-                    <span className="text-secondary-600">مغلق</span>
-                  </p>
-                </div>
+
+              <div className="mt-10 rounded-2xl border border-accent-600/20 bg-accent-50 p-7">
+                <h3 className="text-base font-bold text-navy-900">
+                  Confidentiality assured
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-secondary-700">
+                  All briefings and inquiries are treated with strict confidentiality.
+                  Sensitive mandates can be discussed under NDA before any details are
+                  shared.
+                </p>
               </div>
             </div>
-            
+
+            {/* Form */}
             <div>
-              <h2 className="text-2xl font-bold mb-6">أرسل رسالة</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block font-medium mb-2">
-                    {t('contact.form.name')}
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-2 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
+              <h2 className="text-2xl font-bold tracking-tight">Send an inquiry</h2>
+
+              <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="name" className="label">
+                      Full name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      className="input"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="organization" className="label">
+                      Organization
+                    </label>
+                    <input
+                      type="text"
+                      id="organization"
+                      className="input"
+                      value={formData.organization}
+                      onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
+                      required
+                    />
+                  </div>
                 </div>
-                
-                <div>
-                  <label htmlFor="email" className="block font-medium mb-2">
-                    {t('contact.form.email')}
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                  />
+
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="email" className="label">
+                      Work email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      className="input"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="phone" className="label">
+                      Phone
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      className="input"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    />
+                  </div>
                 </div>
-                
+
                 <div>
-                  <label htmlFor="phone" className="block font-medium mb-2">
-                    {t('contact.form.phone')}
+                  <label htmlFor="sector" className="label">
+                    Area of interest
                   </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-2 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  />
+                  <select
+                    id="sector"
+                    className="input"
+                    value={formData.sector}
+                    onChange={(e) => setFormData({ ...formData, sector: e.target.value })}
+                  >
+                    <option>Hospital / Clinical Facility</option>
+                    <option>Market Entry &amp; Investment Advisory</option>
+                    <option>Due Diligence</option>
+                    <option>Commercial Growth &amp; Expansion</option>
+                    <option>Healthcare HR &amp; Executive Search</option>
+                    <option>Approved Vendor List</option>
+                    <option>Other</option>
+                  </select>
                 </div>
-                
+
                 <div>
-                  <label htmlFor="message" className="block font-medium mb-2">
-                    {t('contact.form.message')}
+                  <label htmlFor="message" className="label">
+                    How can we help?
                   </label>
                   <textarea
                     id="message"
                     rows={5}
-                    className="w-full px-4 py-2 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                    className="input"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
-                  ></textarea>
+                  />
                 </div>
-                
+
                 <button type="submit" className="btn-primary w-full">
-                  <Send size={18} className="ml-2" />
-                  {t('contact.form.send')}
+                  <Send className="h-4 w-4" />
+                  Submit Inquiry
                 </button>
               </form>
             </div>
@@ -160,5 +199,38 @@ const ContactPage: React.FC = () => {
     </Layout>
   );
 };
+
+interface ContactRowProps {
+  icon: React.ReactNode;
+  title: string;
+  lines: string[];
+  href?: string;
+}
+
+const ContactRow: React.FC<ContactRowProps> = ({ icon, title, lines, href }) => (
+  <div className="flex items-start gap-4">
+    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-50 text-accent-700">
+      {React.cloneElement(icon as React.ReactElement, { className: 'h-5 w-5' })}
+    </div>
+    <div>
+      <h3 className="font-semibold text-navy-900">{title}</h3>
+      {lines.map((line) =>
+        href ? (
+          <a
+            key={line}
+            href={href}
+            className="mt-1 block text-secondary-600 transition-colors hover:text-accent-700"
+          >
+            {line}
+          </a>
+        ) : (
+          <p key={line} className="mt-1 text-secondary-600">
+            {line}
+          </p>
+        )
+      )}
+    </div>
+  </div>
+);
 
 export default ContactPage;

@@ -4,18 +4,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-          950: '#082f49',
+        navy: {
+          50: '#f4f6f9',
+          100: '#e6ebf1',
+          200: '#c9d3df',
+          300: '#9fb0c4',
+          400: '#6f87a3',
+          500: '#4d6585',
+          600: '#3a4f6e',
+          700: '#2f4059',
+          800: '#1c2838',
+          900: '#121c29',
+          950: '#0a111b',
+        },
+        accent: {
+          50: '#ecfdf5',
+          100: '#d1fae5',
+          200: '#a7f3d0',
+          300: '#6ee7b7',
+          400: '#34d399',
+          500: '#10b981',
+          600: '#059669',
+          700: '#047857',
+          800: '#065f46',
+          900: '#064e3b',
         },
         secondary: {
           50: '#f8fafc',
@@ -32,12 +44,9 @@ export default {
         }
       },
       fontFamily: {
-        'arabic': ['"GE SS"', '"Noto Naskh Arabic"', '"Cairo"', '"Tajawal"', 'sans-serif'],
-        'tajawal': ['Tajawal', 'sans-serif'],
-        'cairo': ['Cairo', 'sans-serif'],
-        'noto': ['"Noto Naskh Arabic"', 'sans-serif'],
-        'ge-ss': ['"GE SS"', 'sans-serif'],
-      }
+        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        serif: ['"Source Serif 4"', 'Georgia', 'serif'],
+      },
     },
   },
   plugins: [],

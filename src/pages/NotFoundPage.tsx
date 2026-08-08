@@ -1,23 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout/Layout';
+import { ArrowRight } from 'lucide-react';
 
 const NotFoundPage: React.FC = () => {
-  const { t } = useTranslation();
-  
   return (
     <Layout>
-      <div className="min-h-[70vh] flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-9xl font-bold text-primary-600">404</h1>
-          <p className="text-2xl font-semibold mb-4">{t('errors.pageNotFound')}</p>
-          <p className="text-secondary-600 mb-8">الصفحة التي تبحث عنها غير موجودة أو تم نقلها</p>
-          <Link to="/" className="btn-primary">
-            العودة إلى الصفحة الرئيسية
-          </Link>
+      <section className="flex min-h-[60vh] items-center bg-white">
+        <div className="mx-auto max-w-2xl px-5 py-20 text-center sm:px-8">
+          <p className="text-7xl font-bold text-accent-600">404</p>
+          <h1 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl">
+            This page has been moved
+          </h1>
+          <p className="mx-auto mt-5 max-w-lg text-lg leading-relaxed text-secondary-600">
+            The page you are looking for does not exist or has been removed as part of a
+            site update.
+          </p>
+          <div className="mt-9">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-navy-800"
+            >
+              Return Home
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };
