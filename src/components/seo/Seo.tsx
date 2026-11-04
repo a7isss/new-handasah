@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 
 export const SITE_URL = 'https://hndasah.com';
-export const DEFAULT_OG_IMAGE = '/stock%20image%20landing.jpg';
+export const SITE_NAME = 'Specialized Technical Services';
+export const OG_TITLE = 'Specialized Technical Services';
+export const OG_DESCRIPTION =
+  'Specialized Technical Services — engineering and technical consultancy for project costing and tendering, from architectural design to complete project cost and priced Bill of Quantities, across construction, infrastructure, and maintenance.';
+export const DEFAULT_OG_IMAGE = '/specialized-technical-services.png';
 
 interface SeoProps {
   title: string;
@@ -48,15 +52,15 @@ const Seo: React.FC<SeoProps> = ({
     setMeta('name', 'robots', noIndex ? 'noindex, nofollow' : 'index, follow');
     setLink('canonical', url);
     setMeta('property', 'og:type', type);
-    setMeta('property', 'og:title', title);
-    setMeta('property', 'og:description', description);
+    setMeta('property', 'og:title', OG_TITLE);
+    setMeta('property', 'og:description', OG_DESCRIPTION);
     setMeta('property', 'og:url', url);
     setMeta('property', 'og:image', image);
-    setMeta('property', 'og:site_name', 'Nathm');
+    setMeta('property', 'og:site_name', SITE_NAME);
     setMeta('property', 'og:locale', 'en_US');
     setMeta('name', 'twitter:card', 'summary_large_image');
-    setMeta('name', 'twitter:title', title);
-    setMeta('name', 'twitter:description', description);
+    setMeta('name', 'twitter:title', OG_TITLE);
+    setMeta('name', 'twitter:description', OG_DESCRIPTION);
     setMeta('name', 'twitter:image', image);
   }, [title, description, path, ogImage, type, noIndex]);
 

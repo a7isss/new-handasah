@@ -13,6 +13,10 @@ import {
   LineChart,
   Users,
   CheckCircle2,
+  DraftingCompass,
+  HardHat,
+  Wrench,
+  Cpu,
 } from 'lucide-react';
 
 const HomePage: React.FC = () => {
@@ -286,6 +290,80 @@ const HomePage: React.FC = () => {
             <Step step="01" title="Diagnose" description="Deep-dive into the asset, market, and regulatory context to define the real problem and its risk profile." />
             <Step step="02" title="Design" description="A practical, prioritized roadmap with owners, timelines, and the commercial and operational levers that matter." />
             <Step step="03" title="Deliver" description="Hands-on implementation support — from licensing to staffing to growth — with continuity through Day 1 and beyond." />
+          </div>
+        </div>
+      </section>
+
+      {/* Hndasah Station — group station */}
+      <section className="section-pad bg-white">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="relative overflow-hidden rounded-3xl bg-navy-950 px-8 py-12 text-white sm:px-12 md:px-16 md:py-16">
+            <div className="pointer-events-none absolute -right-32 top-0 h-[380px] w-[520px] rounded-full bg-accent-600/15 blur-[120px]" />
+            <div className="pointer-events-none absolute -left-24 bottom-0 h-[280px] w-[420px] rounded-full bg-accent-500/10 blur-[110px]" />
+
+            <div className="relative grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
+              <div>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-600 text-white">
+                    <DraftingCompass className="h-6 w-6" />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-[0.28em] text-accent-400">
+                    A Nathm Group Station
+                  </span>
+                </div>
+                <h2 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Hndasah Station — AI-Powered Costing &amp; Tendering
+                </h2>
+                <p className="mt-5 max-w-xl text-lg leading-relaxed text-secondary-300">
+                  One station that carries a project the entire cost journey — from
+                  architectural design to complete project cost and a priced, tender-ready
+                  Bill of Quantities, powered by AI cost intelligence and engineering
+                  discipline.
+                </p>
+                <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
+                  {[
+                    { icon: HardHat, label: 'Construction & infrastructure' },
+                    { icon: Wrench, label: 'Maintenance & asset management' },
+                    { icon: Cpu, label: 'Developer technology solutions' },
+                  ].map(({ icon: Icon, label }) => (
+                    <li key={label} className="inline-flex items-center gap-2 text-sm font-medium text-secondary-300">
+                      <Icon className="h-4 w-4 text-accent-400" />
+                      {label}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-9 flex flex-wrap items-center gap-4">
+                  <Link
+                    to="/station"
+                    className="inline-flex items-center gap-2 rounded-full bg-accent-600 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:bg-accent-500"
+                  >
+                    View the Station
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    to="/station-ar"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-accent-500/40 hover:bg-white/10"
+                  >
+                    العربية
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {[
+                  { title: 'Design-to-Cost', detail: 'Cost discipline from the first architectural concept.' },
+                  { title: 'Priced BOQ', detail: 'Itemised, rate-built, and tender-ready quantities.' },
+                  { title: 'Infrastructure', detail: 'Roads, utilities, and public-works costing.' },
+                  { title: 'Equipment Systems', detail: 'Managed maintenance and asset registers.' },
+                ].map(({ title, detail }) => (
+                  <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                    <CheckCircle2 className="h-5 w-5 text-accent-400" />
+                    <h3 className="mt-4 text-base font-bold text-white">{title}</h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-secondary-400">{detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
