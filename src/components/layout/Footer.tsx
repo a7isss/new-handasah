@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                 <span className="text-secondary-400">
                   Office 10, 53165 Olaya Street,
                   <br />
-                  Riyadh, Kingdom of Saudi Arabia
+                  Hail, Kingdom of Saudi Arabia
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
             &copy; {currentYear} Nathm. All rights reserved.
           </p>
           <p className="text-center text-xs text-secondary-500 md:text-right">
-            Medical sector consulting, Riyadh. Advisory services only — not a licensed
+            Medical sector consulting, Hail. Advisory services only — not a licensed
             financial or banking institution.
           </p>
         </div>

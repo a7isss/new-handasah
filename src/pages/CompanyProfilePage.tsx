@@ -419,7 +419,7 @@ const CompanyProfilePage: React.FC = () => {
               <p className="mt-2 text-sm leading-relaxed text-secondary-300">
                 Office 10, 53165 Olaya Street
                 <br />
-                Riyadh, Kingdom of Saudi Arabia
+                Hail, Kingdom of Saudi Arabia
               </p>
             </div>
             <div className="print-break rounded-2xl border border-white/10 bg-white/5 p-7">

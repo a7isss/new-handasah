@@ -14,8 +14,8 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Seo
-        title="About Nathm | Medical Sector Consulting Group — Riyadh, KSA"
-        description="Nathm is a medical-sector consulting group in Riyadh, Kingdom of Saudi Arabia — flagship medical consulting, healthcare HR, an approved vendor program, and a legacy engineering division."
+        title="About Nathm | Medical Sector Consulting Group — Hail, KSA"
+        description="Nathm is a medical-sector consulting group in Hail, Kingdom of Saudi Arabia — flagship medical consulting, healthcare HR, an approved vendor program, and a legacy engineering division."
         path="/about"
       />
       <Layout>

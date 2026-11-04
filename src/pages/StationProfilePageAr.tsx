@@ -289,18 +289,28 @@ const StationProfilePageAr: React.FC = () => {
 
           {/* About the station */}
           <section className="px-6 py-16 sm:px-10 md:px-14 md:py-20">
-            <div className="max-w-3xl">
-              <p className="eyebrow">عن المحطة</p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-                مركز واحد لدورة تكلفة المشروع كاملة
-              </h2>
-              <p className="mt-5 text-lg leading-relaxed text-secondary-600">
-                محطة هندسة هي وحدة التقدير والمناقصات المدعومة بالذكاء الاصطناعي ضمن مجموعة
-                نظم. ننطلق بالمشروع من أول فكرة معمارية وصولًا إلى تكلفة كاملة وجدول كميات
-                مسعّر مفصّل، ثم نرافقه حتى طرح المناقصة. وتوسّع المحطة إرث المجموعة الهندسي
-                عبر الحصر الكمي بالذكاء الاصطناعي، والتسعير بأسعار السوق، وتقنيات تكاليف
-                موجّهة للمطوّرين.
-              </p>
+            <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
+              <div>
+                <p className="eyebrow">عن المحطة</p>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+                  مركز واحد لدورة تكلفة المشروع كاملة
+                </h2>
+                <p className="mt-5 text-lg leading-relaxed text-secondary-600">
+                  محطة هندسة هي وحدة التقدير والمناقصات المدعومة بالذكاء الاصطناعي ضمن مجموعة
+                  نظم. ننطلق بالمشروع من أول فكرة معمارية وصولًا إلى تكلفة كاملة وجدول كميات
+                  مسعّر مفصّل، ثم نرافقه حتى طرح المناقصة. وتوسّع المحطة إرث المجموعة الهندسي
+                  عبر الحصر الكمي بالذكاء الاصطناعي، والتسعير بأسعار السوق، وتقنيات تكاليف
+                  موجّهة للمطوّرين.
+                </p>
+              </div>
+              <div className="overflow-hidden rounded-2xl border border-secondary-200">
+                <img
+                  src="/station-overview.jpg"
+                  alt="مشروع هندسي وإنشائي"
+                  loading="lazy"
+                  className="aspect-[3/2] w-full object-cover"
+                />
+              </div>
             </div>
 
             <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -452,7 +462,7 @@ const StationProfilePageAr: React.FC = () => {
                 <p className="mt-2 text-sm leading-relaxed text-secondary-300">
                   مكتب 10، 53165 شارع العليا
                   <br />
-                  الرياض، المملكة العربية السعودية
+                  حائل، المملكة العربية السعودية
                 </p>
               </div>
               <div className="print-break rounded-2xl border border-white/10 bg-white/5 p-7">

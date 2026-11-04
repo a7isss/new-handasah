@@ -30,8 +30,8 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Seo
-        title="Contact Nathm | Medical Sector Consulting — Riyadh, KSA"
-        description="Contact Nathm for a private briefing — Office 10, 53165 Olaya Street, Riyadh, Kingdom of Saudi Arabia. Email gm@hndasah.com or call 924 445 440."
+        title="Contact Nathm | Medical Sector Consulting — Hail, KSA"
+        description="Contact Nathm for a private briefing — Office 10, 53165 Olaya Street, Hail, Kingdom of Saudi Arabia. Email gm@hndasah.com or call 924 445 440."
         path="/contact"
       />
       <Layout>
@@ -65,7 +65,7 @@ const ContactPage: React.FC = () => {
                 <ContactRow
                   icon={<MapPin />}
                   title="Address"
-                  lines={['Office 10, 53165 Olaya Street', 'Riyadh, Kingdom of Saudi Arabia']}
+                  lines={['Office 10, 53165 Olaya Street', 'Hail, Kingdom of Saudi Arabia']}
                 />
                 <ContactRow
                   icon={<Phone />}
